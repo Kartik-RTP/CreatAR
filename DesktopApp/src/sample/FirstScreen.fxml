@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FirstScreenController">
    <children>
-      <Button layoutX="133.0" layoutY="338.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="132.0" text="New Project" />
+      <Button layoutX="133.0" layoutY="338.0" mnemonicParsing="false" onAction="#firstScreenNewProject" prefHeight="44.0" prefWidth="132.0" text="New Project" />
       <Button layoutX="428.0" layoutY="338.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="132.0" text="Open Project" />
       <Label layoutX="213.0" layoutY="53.0" prefHeight="31.0" prefWidth="255.0" text="Welcome to CreatAR">
          <padding>
