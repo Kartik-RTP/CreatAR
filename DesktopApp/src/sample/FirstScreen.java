@@ -18,6 +18,7 @@ public class FirstScreen extends Application {
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("FirstScreen.fxml"));
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("FirstScreen.css").toExternalForm());
         primaryStage.setTitle("New Project");
 
         primaryStage.setScene(scene);

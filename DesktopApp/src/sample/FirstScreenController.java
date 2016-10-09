@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 
 import javafx.event.ActionEvent;
+
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -12,7 +14,10 @@ import java.util.ResourceBundle;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 
@@ -26,9 +31,17 @@ public class FirstScreenController implements Initializable{
     private Label label;
 
     @FXML
+    private Button firstScreenOpenProject;
+
+    @FXML
+    private ListView listView;
+
+
+    @FXML
     private void firstScreenNewProject(ActionEvent event) throws IOException{
         Parent root = FXMLLoader.load(getClass().getResource("NewProject.fxml"));
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("NewProject.css").toExternalForm());
         Stage app = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app.setScene(scene);
         app.show();
@@ -36,8 +49,16 @@ public class FirstScreenController implements Initializable{
 
     @FXML
     private void firstScreenOpenProject(ActionEvent event) throws IOException{
-
-        /* The Action for the Open project button in the First Screen */
+        FileChooser fc = new FileChooser();
+        File selectedFile = fc.showOpenDialog(null);
+    /*
+        if (selectedFile != null){
+            listView.getItems().add(selectedFile.getName());
+        }
+        else{
+            System.out.println("Invalid\n");
+        }
+*/
     }
 
 
