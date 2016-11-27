@@ -1,4 +1,4 @@
-package sample;
+package application.java;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,11 +16,11 @@ public class FirstScreen extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("FirstScreen.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/scene_main.fxml"));
         Scene scene = new Scene(root);
-        scene.getStylesheets().add(getClass().getResource("FirstScreen.css").toExternalForm());
-        primaryStage.setTitle("New Project");
-
+        scene.getStylesheets().add(getClass().getResource("/css/FirstScreen.css").toExternalForm());
+        primaryStage.setTitle("CreatAR");
+        primaryStage.setResizable(false);
         primaryStage.setScene(scene);
 
         primaryStage.show();

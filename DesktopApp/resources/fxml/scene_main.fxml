@@ -8,9 +8,10 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FirstScreenController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controller.FirstScreenController">
    <children>
       <Button fx:id="firstScreenNewProject" layoutX="133.0" layoutY="338.0" mnemonicParsing="false" onAction="#firstScreenNewProject" prefHeight="44.0" prefWidth="132.0" text="New Project" />
+
       <Button fx:id="firstScreenOpenProject" layoutX="428.0" layoutY="338.0" mnemonicParsing="false" onAction="#firstScreenOpenProject" prefHeight="44.0" prefWidth="132.0" text="Open Project" />
       <Label layoutX="213.0" layoutY="29.0" prefHeight="55.0" prefWidth="298.0" text="Welcome to CreatAR" textFill="#339999">
          <padding>
@@ -20,14 +21,14 @@
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="124.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="414.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@New-to-inMotion-Reviewer-Markup-Sharing-Options-and-Forwarding-from-Review-Interface.png" />
+            <Image url="@../images/icon_open_project.PNG" />
          </image>
       </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="419.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="122.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Open-icon.png" />
+            <Image url="@../images/icon_new_project.PNG" />
          </image>
       </ImageView>
    </children>

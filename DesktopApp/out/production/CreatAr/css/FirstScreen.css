@@ -1,0 +1,17 @@
+/* This is the CSS file for the first screen of CreatAR */
+
+.root{
+    -fx-background-color: white;
+}
+
+#firstScreenNewProject, #firstScreenOpenProject{
+    -fx-background-color: #339999;
+    -fx-font-weight : bold;
+    -fx-text-fill : white;
+    -fx-font-size : 15px;
+    -fx-background-radius: 8,7,6;
+    -fx-background-insets: 0,1,2;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+

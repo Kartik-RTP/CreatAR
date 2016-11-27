@@ -1,4 +1,4 @@
-package sample;
+package application.java.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -31,6 +31,9 @@ public class FirstScreenController implements Initializable{
     private Label label;
 
     @FXML
+    private Button firstScreenNewProject;
+
+    @FXML
     private Button firstScreenOpenProject;
 
     @FXML
@@ -39,9 +42,9 @@ public class FirstScreenController implements Initializable{
 
     @FXML
     private void firstScreenNewProject(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("NewProject.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/scene_project_specifications_dialog.fxml"));
         Scene scene = new Scene(root);
-        scene.getStylesheets().add(getClass().getResource("NewProject.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("/css/NewProject.css").toExternalForm());
         Stage app = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app.setScene(scene);
         app.show();
