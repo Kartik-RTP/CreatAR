@@ -100,9 +100,6 @@ public class NewProjectController implements Initializable {
         newProjectSelectTemplate.setItems(selectTemplateOptions);
         newProjectSelectSdk.setItems(selectSdkOptions);
 
-
-
-
     }
 
 }

@@ -5,7 +5,11 @@ import application.java.model.BasicMarker;
 import application.java.model.BasicInformation;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
@@ -16,6 +20,7 @@ import javafx.scene.text.Text;
 import javafx.stage.*;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
@@ -48,6 +53,11 @@ public class SimpleTemplateController  implements Initializable{
 
     @FXML
     ListView informationListView;
+
+    @FXML
+    Button simpleProjectBuildButton;
+
+
 
 
 
@@ -192,6 +202,18 @@ public class SimpleTemplateController  implements Initializable{
         addInformationButton.setDisable(true);
         doneChangesToInformationButton.setDisable(true);
     }
+
+    // What happens when you click on Build button
+    @FXML
+    private void simpleProjectBuildButton(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/FourthScreen.fxml"));
+        Scene scene = new Scene(root);
+        //scene.getStylesheets().add(getClass().getResource("/css/FirstScreen.css").toExternalForm());
+        Stage app = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app.setScene(scene);
+        app.show();
+    }
+
 
 
     //commenting needs to be done properly and information about functions needs to be added
