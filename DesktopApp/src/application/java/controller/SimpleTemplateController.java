@@ -229,22 +229,6 @@ public class SimpleTemplateController  implements Initializable{
     }
 
     static class XCell extends ListCell<String> {
-//        @Override
-//        public void updateItem(String item, boolean empty) {
-//            super.updateItem(item, empty);
-//            if (item != null) {
-//                final Button btn = new Button(item + " with index " + getIndex());
-//                btn.setOnAction(new EventHandler<ActionEvent>() {
-//                    @Override
-//                    public void handle(ActionEvent event) {
-//                        System.out.println("I am a " + getItem() + " with index " + getIndex());
-//                    }
-//                });
-//                setGraphic(btn);
-//            } else {
-//                setGraphic(null);
-//            }
-//        }
 
         HBox hbox = new HBox();
         Label label = new Label("(empty)");
@@ -260,6 +244,7 @@ public class SimpleTemplateController  implements Initializable{
                 @Override
                 public void handle(ActionEvent event) {
                     System.out.println(lastItem + " : " + event);
+                    //TODO : deleteInformation();
                 }
             });
         }
