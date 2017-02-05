@@ -128,6 +128,7 @@
          </children>
       </VBox>
    </center>
+
    <left>
       <Button fx:id="gotoPreviousMarkerButton" mnemonicParsing="false" onAction="#gotoPreviousMarker" text="&lt;" visible="true" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -135,6 +136,7 @@
          </BorderPane.margin>
       </Button>
    </left>
+
    <right>
       <Button fx:id="gotoNextMarkerButton" mnemonicParsing="false" onAction="#gotoNextMarker" text="&gt;" visible="true" BorderPane.alignment="CENTER">
          <BorderPane.margin>

@@ -4,20 +4,23 @@ import application.java.model.BasicInformation;
 import application.java.model.BasicMarker;
 import application.java.model.BasicInformation;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.SelectionMode;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.Priority;
 import javafx.scene.text.Text;
 import javafx.stage.*;
+import javafx.util.Callback;
 
 import java.io.File;
 import java.io.IOException;
@@ -155,6 +158,8 @@ public class SimpleTemplateController  implements Initializable{
     }
 
 
+
+    // This is the method which is called when we press the "Add Button" next to "Edit Button"
     public void addInformation(ActionEvent actionEvent) {
            //TODO: to be filled
 
@@ -173,6 +178,14 @@ public class SimpleTemplateController  implements Initializable{
         if(selectedFiles != null){
             for (int i = 0;i < selectedFiles.size();i++){
                 informationListView.getItems().add(selectedFiles.get(i).getName());
+
+                informationListView.setCellFactory(new Callback<ListView<String>, ListCell<String>>() {
+                    @Override
+                    public ListCell<String> call(ListView<String> list) {
+                        return new XCell();
+                    }
+                });
+
                 informationListView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
                 //selectedFiles.remove(informationListView.getSelectionModel().getSelectedItem());
             }
@@ -180,6 +193,7 @@ public class SimpleTemplateController  implements Initializable{
         else{
             System.out.println("Files not chosen");
         }
+
         //fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
         //System.out.print("Got a hit");
         //TODO:change the actual parameter passed as the primaryStage
@@ -214,7 +228,56 @@ public class SimpleTemplateController  implements Initializable{
         app.show();
     }
 
+    static class XCell extends ListCell<String> {
+//        @Override
+//        public void updateItem(String item, boolean empty) {
+//            super.updateItem(item, empty);
+//            if (item != null) {
+//                final Button btn = new Button(item + " with index " + getIndex());
+//                btn.setOnAction(new EventHandler<ActionEvent>() {
+//                    @Override
+//                    public void handle(ActionEvent event) {
+//                        System.out.println("I am a " + getItem() + " with index " + getIndex());
+//                    }
+//                });
+//                setGraphic(btn);
+//            } else {
+//                setGraphic(null);
+//            }
+//        }
 
+        HBox hbox = new HBox();
+        Label label = new Label("(empty)");
+        Pane pane = new Pane();
+        Button button = new Button("(>)");
+        String lastItem;
+
+        public XCell() {
+            super();
+            hbox.getChildren().addAll(label, pane, button);
+            HBox.setHgrow(pane, Priority.ALWAYS);
+            button.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    System.out.println(lastItem + " : " + event);
+                }
+            });
+        }
+
+        @Override
+        protected void updateItem(String item, boolean empty) {
+            super.updateItem(item, empty);
+            setText(null);  // No text in label of super class
+            if (empty) {
+                lastItem = null;
+                setGraphic(null);
+            } else {
+                lastItem = item;
+                label.setText(item!=null ? item : "<null>");
+                setGraphic(hbox);
+            }
+        }
+    }
 
     //commenting needs to be done properly and information about functions needs to be added
 
