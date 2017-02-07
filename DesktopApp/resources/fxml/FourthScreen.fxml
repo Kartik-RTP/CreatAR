@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="application.java.controller.FourthScreenController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controller.FourthScreenController">
     <columnConstraints>
         <ColumnConstraints />
     </columnConstraints>
@@ -20,8 +20,8 @@
     <children>
         <Pane prefHeight="480.0" prefWidth="720.0">
             <children>
-                <Button fx:id="canc_Button" cancelButton="true" layoutX="88.0" layoutY="386.0" mnemonicParsing="false" text="Cancel" onAction="#canc_Button" />
-                <Button layoutX="579.0" layoutY="386.0" mnemonicParsing="false" text="Finish" />
+                <Button fx:id="fourthScreenCancelButton" cancelButton="true" layoutX="88.0" layoutY="386.0" mnemonicParsing="false" onAction="#canc_Button" text="Cancel" />
+                <Button fx:id="fourthScreenFinishButton" layoutX="579.0" layoutY="386.0" mnemonicParsing="false" text="Finish" />
                 <ProgressBar layoutX="88.0" layoutY="149.0" prefHeight="18.0" prefWidth="538.0" progress="0.87" />
                 <TextArea layoutX="88.0" layoutY="198.0" prefHeight="153.0" prefWidth="538.0" />
                 <Text fill="#339999" layoutX="88.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CreatAR">

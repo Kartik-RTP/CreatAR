@@ -14,7 +14,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" minHeight="502.0" minWidth="1000.0" prefHeight="593.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8.0.60" fx:controller="application.java.controller.SimpleTemplateController">
+<BorderPane minHeight="502.0" minWidth="1000.0" prefHeight="593.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controller.SimpleTemplateController">
    <top>
       <Button fx:id="addMarkerButton" mnemonicParsing="false" onAction="#addMarker" prefHeight="53.0" prefWidth="172.0" text="Add Marker" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -46,17 +46,16 @@
                               </HBox.margin>
                            </Button>
                         </children>
-                     </HBox>
-                     <ListView fx:id="informationListView" prefHeight="326.0" prefWidth="319.0" style="-fx-border-color: #339999;">
                         <VBox.margin>
-                           <Insets right="1.0" />
+                           <Insets bottom="30.0" />
+                        </VBox.margin>
+                     </HBox>
+                     <ListView fx:id="informationListView" prefHeight="321.0" prefWidth="319.0" style="-fx-border-color: #339999;">
+                        <VBox.margin>
+                           <Insets left="1.0" />
                         </VBox.margin>
                      </ListView>
-                     <ToolBar prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: white;">
-                        <items>
-                           <Button fx:id="simpleTemplateDeleteListButton" mnemonicParsing="false" prefHeight="30.0" prefWidth="111.0" text="Delete" translateX="160.0" />
-                        </items>
-                     </ToolBar>
+                     <ToolBar prefHeight="40.0" prefWidth="84.0" style="-fx-background-color: white;" />
                      <!--
                      <ScrollPane fx:id="informationScrollPane" prefHeight="365.0" prefWidth="449.0" style="-fx-border-color: red;" BorderPane.alignment="CENTER">
                          <content>
@@ -147,7 +146,7 @@
    <bottom>
       <HBox prefHeight="73.0" prefWidth="1040.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="simpleProjectBuildButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="139.0" text="Build" textAlignment="CENTER" onAction="#simpleProjectBuildButton">
+            <Button fx:id="simpleProjectBuildButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#simpleProjectBuildButton" prefHeight="33.0" prefWidth="139.0" text="Build" textAlignment="CENTER">
                <HBox.margin>
                   <Insets bottom="10.0" left="850.0" top="15.0" />
                </HBox.margin>
@@ -158,4 +157,7 @@
          </children>
       </HBox>
    </bottom>
+   <padding>
+      <Insets left="10.0" />
+   </padding>
 </BorderPane>
