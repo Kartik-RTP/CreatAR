@@ -228,7 +228,7 @@ public class SimpleTemplateController  implements Initializable{
         app.show();
     }
 
-    static class XCell extends ListCell<String> {
+    class XCell extends ListCell<String> {
 
         HBox hbox = new HBox();
         Label label = new Label("(empty)");
@@ -244,6 +244,7 @@ public class SimpleTemplateController  implements Initializable{
                 @Override
                 public void handle(ActionEvent event) {
                     System.out.println(lastItem + " : " + event);
+                    informationListView.getItems().remove(lastItem);  //This line is to remove a row on button click!
                     //TODO : deleteInformation();
                 }
             });
