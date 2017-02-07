@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controller.FourthScreenController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane prefHeight="480.0" prefWidth="720.0">
+            <children>
+                <Button fx:id="fourthScreenCancelButton" cancelButton="true" layoutX="88.0" layoutY="386.0" mnemonicParsing="false" onAction="#canc_Button" text="Cancel" />
+                <Button fx:id="fourthScreenFinishButton" layoutX="579.0" layoutY="386.0" mnemonicParsing="false" text="Finish" />
+                <ProgressBar layoutX="88.0" layoutY="149.0" prefHeight="18.0" prefWidth="538.0" progress="0.87" />
+                <TextArea layoutX="88.0" layoutY="198.0" prefHeight="153.0" prefWidth="538.0" />
+                <Text fill="#339999" layoutX="88.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CreatAR">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Text>
+                <Text fill="#339999" layoutX="91.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please wait, while we create your very own AR Application." wrappingWidth="537.9999947547913">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+    </children>
+</GridPane>

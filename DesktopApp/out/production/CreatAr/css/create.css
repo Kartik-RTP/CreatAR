@@ -1,0 +1,68 @@
+/* This is the CSS file for the second screen (i.e filling details of new project) of CreatAR */
+
+.root{
+    -fx-background-color: white;
+}
+
+#addMarkerButton{
+    -fx-background-color: #339999;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+
+#editInformationButton, #removeMarkerButton, #changeMarkerButton{
+    -fx-background-color: #339999;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+#addInformationButton, #doneChangesToInformationButton, #gotoPreviousMarkerButton, #gotoNextMarkerButton{
+    -fx-background-color: #339999;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+
+
+#simpleProjectBuildButton {
+    -fx-background-color: #339999;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+#simpleTemplateDeleteList, #simpleTemplateDeleteListButton{
+    -fx-background-color: #339999;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+}
+
+.deleteInfoButton{
+    -fx-background-color: #339999;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 10px;
+    -fx-background-radius: 8, 7, 6;
+    -fx-background-insets: 0, 1, 2;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0.0, 0, 1);
+
+}
