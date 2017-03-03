@@ -1,0 +1,5 @@
+site_name: CreatAR Documentation
+site_description: Giving the access to Augmented Reality
+theme: 'material'
+pages:
+- ['index.md', 'Index']
