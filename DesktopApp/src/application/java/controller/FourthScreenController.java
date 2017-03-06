@@ -23,6 +23,9 @@ public class FourthScreenController implements Initializable {
     @FXML
     javafx.scene.control.Button canc_Button;
 
+    @FXML
+    ProgressBar buildProgressBar;
+
 //    @Override
 //    public void start(Stage primaryStage) throws Exception{
 //        Parent root = FXMLLoader.load(getClass().getResource("FourthScreen.fxml"));
@@ -32,10 +35,14 @@ public class FourthScreenController implements Initializable {
 //    }
 
 
+
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
+
     }
+
 
     @FXML
     private void canc_Button(ActionEvent event) throws IOException {

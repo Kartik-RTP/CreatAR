@@ -22,7 +22,7 @@
             <children>
                 <Button fx:id="fourthScreenCancelButton" cancelButton="true" layoutX="88.0" layoutY="386.0" mnemonicParsing="false" onAction="#canc_Button" text="Cancel" />
                 <Button fx:id="fourthScreenFinishButton" layoutX="579.0" layoutY="386.0" mnemonicParsing="false" text="Finish" />
-                <ProgressBar layoutX="88.0" layoutY="149.0" prefHeight="18.0" prefWidth="538.0" progress="0.87" />
+                <ProgressBar fx:id="buildProgressBar" layoutX="88.0" layoutY="149.0" prefHeight="18.0" prefWidth="538.0" progress="0.87" />
                 <TextArea layoutX="88.0" layoutY="198.0" prefHeight="153.0" prefWidth="538.0" />
                 <Text fill="#339999" layoutX="88.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CreatAR">
                     <font>
