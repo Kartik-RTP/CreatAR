@@ -241,7 +241,7 @@ public class SimpleTemplateController  implements Initializable{
 
 
 
-
+        
         String lastItem;
 
         public XCell() {
