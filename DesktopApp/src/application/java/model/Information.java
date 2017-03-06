@@ -5,7 +5,7 @@ import java.lang.String;
 /**
  * Created by Rajat on 10/21/2016.
  */
-abstract class Information  {
+public abstract class Information  {
 
     private  String mName;
     private  String mAddress;

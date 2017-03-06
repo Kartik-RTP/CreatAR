@@ -2,13 +2,12 @@ package application.java.controller;
 
 import application.java.model.BasicInformation;
 import application.java.model.BasicMarker;
-import application.java.model.BasicInformation;
+import application.java.model.Information;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.AccessibleAttribute;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -32,7 +31,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 /**
- * Created by canopy on 24-10-2016.
+ * Created by kartik on 24-10-2016.
  */
 public class SimpleTemplateController  implements Initializable{
 
@@ -61,11 +60,6 @@ public class SimpleTemplateController  implements Initializable{
 
     @FXML
     Button simpleProjectBuildButton;
-
-    @FXML
-
-
-
 
 
     private List<BasicMarker> mListOfMarkers;
@@ -109,9 +103,14 @@ public class SimpleTemplateController  implements Initializable{
 
     }
 
+    /* updateMarkerPane basically just puts out the contents of mCurrentActiveMarker
+       on screen in the #put_id_here pane
+    */
     private void updateMarkerPane() {
         if(mListOfMarkers.size()>0){
-            markerBorderPane.setVisible(true); //try to change this , calling this function too many times
+            markerBorderPane.setVisible(true); //try to change this
+                                               // , calling this function too many times
+
             //reformat below 2 lines
             gotoNextMarkerButton.setVisible(true);
             gotoPreviousMarkerButton
@@ -119,6 +118,9 @@ public class SimpleTemplateController  implements Initializable{
             if (mCurrentActiveMarker != null) {
                 markerImageView.setImage(new Image(mCurrentActiveMarker.getAddress()));
                 markerNameText.setText(mCurrentActiveMarker.getName());
+                updateInformationListView(mCurrentActiveMarker.getInformationList());
+                antiEditInformation();
+
                 //TODO:see if marker index needs to be updated here ..or something
                 //informationListView.getItems().add(selectedFiles.get(i).getName());
 
@@ -180,19 +182,10 @@ public class SimpleTemplateController  implements Initializable{
         List<File> selectedFiles = fileChooser.showOpenMultipleDialog(null);
 
         if(selectedFiles != null){
-            for (int i = 0;i < selectedFiles.size();i++){
-                informationListView.getItems().add(selectedFiles.get(i).getName());
-
-                informationListView.setCellFactory(new Callback<ListView<String>, ListCell<String>>() {
-                    @Override
-                    public ListCell<String> call(ListView<String> list) {
-                        return new XCell();
-                    }
-                });
-
-                informationListView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-                //selectedFiles.remove(informationListView.getSelectionModel().getSelectedItem());
-            }
+            //Add the informations to information list of current active marker
+            addInfomationToInformationListOfActiveMarker(selectedFiles);
+            //Update the list view
+            updateInformationListView(mCurrentActiveMarker.getInformationList());
         }
         else{
             System.out.println("Files not chosen");
@@ -216,10 +209,51 @@ public class SimpleTemplateController  implements Initializable{
         }
     }
 
+    private void addInfomationToInformationListOfActiveMarker(List<File> selectedFiles) {
+        for (int i=0;i<selectedFiles.size();i++){
+            mCurrentActiveMarker.getInformationList().add(
+                                                new BasicInformation(
+                                                        selectedFiles.get(i).getAbsolutePath(),
+                                                        selectedFiles.get(i).getName()
+                                                                     )
+                                                         );
+        }
+    }
+
+    private void updateInformationListView(List<Information> informationList) {
+        //TODO:Note that we are processing entire list even if add a single information ,
+        //TODO: Check if this can be optimized somehow
+        informationListView.getItems().clear(); //empties the list
+
+        for (int i = 0;i < informationList.size();i++){
+            informationListView.getItems().add(
+                                                (
+                                                         informationList.get(i)
+                                                 ).getName()); //TODO:check if this line works properly
+
+            informationListView.setCellFactory(new Callback<ListView<String>, ListCell<String>>() {
+                @Override
+                public ListCell<String> call(ListView<String> list) {
+                    return new XCell();
+                }
+            });
+
+            informationListView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+            //selectedFiles.remove(informationListView.getSelectionModel().getSelectedItem());
+        }
+    }
+
     public void doneChangesToInformation(ActionEvent actionEvent) {
+
+        antiEditInformation();
+    }
+
+    //used for partial toggling purposes
+    public void antiEditInformation(){
         addInformationButton.setDisable(true);
         doneChangesToInformationButton.setDisable(true);
     }
+
 
     // What happens when you click on Build button
     @FXML
@@ -238,10 +272,6 @@ public class SimpleTemplateController  implements Initializable{
         Label label = new Label("(empty)");
         Pane pane = new Pane();
         Button button = new Button("(X)");
-
-
-
-        
         String lastItem;
 
         public XCell() {
@@ -254,7 +284,9 @@ public class SimpleTemplateController  implements Initializable{
                 public void handle(ActionEvent event) {
                     System.out.println(lastItem + " : " + event);
                     informationListView.getItems().remove(lastItem);  //This line is to remove a row on button click!
-                    //TODO : deleteInformation();
+                    //TODO : deleteInformation(); So create this function and
+                    //TODO : basically , we need to remove the above rows data as well
+
                 }
             });
         }
