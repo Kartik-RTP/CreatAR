@@ -72,7 +72,7 @@ public class SimpleTemplateController  implements Initializable{
         //this method is called when all fx:id nodes are available ..
         //I am going to set up the list view at this point
         if(mListOfMarkers==null){mListOfMarkers=new ArrayList<BasicMarker>();}
-        
+
     }
 
 

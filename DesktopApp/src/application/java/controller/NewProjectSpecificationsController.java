@@ -9,6 +9,8 @@ import javafx.fxml.Initializable;
 
 
 import javafx.event.ActionEvent;
+
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,6 +23,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 
 
@@ -30,9 +33,9 @@ import javafx.stage.Stage;
  */
 
 
-public class NewProjectController implements Initializable {
+public class NewProjectSpecificationsController implements Initializable {
 
-    private static final String TAG = NewProjectController.class.getSimpleName();
+    private static final String TAG = NewProjectSpecificationsController.class.getSimpleName();
 
 
     @FXML
@@ -54,6 +57,7 @@ public class NewProjectController implements Initializable {
     @FXML
     private TextField projectDirectoryTextField ;
 
+    @FXML Button browseDirectoryButton;
 
 
 
@@ -84,6 +88,19 @@ public class NewProjectController implements Initializable {
         ///////////
 
         stage.show();
+    }
+
+    @FXML
+    private void browseDirectory(ActionEvent event) throws IOException{
+        //allows one to choose project workspace
+        DirectoryChooser directoryChooser = new DirectoryChooser();
+        directoryChooser.setTitle("Select Project Location");
+        //Show open file dialog
+        File file = directoryChooser.showDialog(null);
+        if(file!=null){
+            projectDirectoryTextField.setText(file.getAbsolutePath());
+        }
+
     }
 
     private void setProjectLocation(FXMLLoader fxmlLoader) {

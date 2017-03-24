@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/FourthScreenController.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/FourthScreenController.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/application/java/controller/NewProjectController.java" afterPath="$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml" afterPath="$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/controller/NewProjectController.java" afterPath="$PROJECT_DIR$/src/application/java/controller/NewProjectController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" afterPath="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/mkdocs_files/docs/index.md" afterPath="$PROJECT_DIR$/../docs/mkdocs_files/docs/index.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/mkdocs_files/site/index.html" afterPath="$PROJECT_DIR$/../docs/mkdocs_files/site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/mkdocs_files/site/mkdocs/search_index.json" afterPath="$PROJECT_DIR$/../docs/mkdocs_files/site/mkdocs/search_index.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../docs/mkdocs_files/site/sitemap.xml" afterPath="$PROJECT_DIR$/../docs/mkdocs_files/site/sitemap.xml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,11 +69,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SimpleTemplateController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimpleTemplateController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+            <state relative-caret-position="97">
+              <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="1530">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,13 +107,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewProjectController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectController.java">
+      <file leaf-file-name="NewProjectSpecificationsController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state relative-caret-position="-279">
+              <caret line="100" column="68" selection-start-line="100" selection-start-column="68" selection-end-line="100" selection-end-column="68" />
               <folding>
-                <element signature="e#2619#2645#0" expanded="true" />
+                <element signature="e#3208#3234#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,7 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sample/FirstScreen.fxml" />
         <option value="$PROJECT_DIR$/src/FirstScreen.css" />
         <option value="$PROJECT_DIR$/src/sample/FirstScreen.java" />
         <option value="$PROJECT_DIR$/src/sample/FirstScreen.css" />
@@ -274,9 +268,10 @@
         <option value="$PROJECT_DIR$/resources/css/create.css" />
         <option value="$PROJECT_DIR$/resources/fxml/FourthScreen.fxml" />
         <option value="$PROJECT_DIR$/src/application/java/controller/FourthScreenController.java" />
-        <option value="$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml" />
         <option value="$PROJECT_DIR$/src/application/java/controller/NewProjectController.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
+        <option value="$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml" />
+        <option value="$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java" />
       </list>
     </option>
   </component>
@@ -1112,7 +1107,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
@@ -1183,7 +1178,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="69" column="78" selection-start-line="69" selection-start-column="78" selection-end-line="69" selection-end-column="78" />
@@ -1243,7 +1238,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="100" column="55" selection-start-line="100" selection-start-column="55" selection-end-line="100" selection-end-column="55" />
@@ -1484,7 +1479,7 @@
     <entry file="file://$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1530">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1492,22 +1487,22 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="97">
+          <caret line="83" column="28" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="28" />
           <folding>
-            <element signature="e#2619#2645#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
+        <state relative-caret-position="-279">
+          <caret line="100" column="68" selection-start-line="100" selection-start-column="68" selection-end-line="100" selection-end-column="68" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#3208#3234#0" expanded="true" />
           </folding>
         </state>
       </provider>
