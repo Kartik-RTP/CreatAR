@@ -47,6 +47,9 @@ public class NewProjectSpecificationsController implements Initializable {
     @FXML
     private Button newProjectNext;
 
+    @FXML
+    private TextField projectTitleTextField;
+
 
     @FXML
     private ComboBox newProjectSelectTemplate;
@@ -55,7 +58,7 @@ public class NewProjectSpecificationsController implements Initializable {
     private ComboBox newProjectSelectSdk;
 
     @FXML
-    private TextField projectDirectoryTextField ;
+    private TextField projectLocationTextField;
 
     @FXML Button browseDirectoryButton;
 
@@ -85,9 +88,20 @@ public class NewProjectSpecificationsController implements Initializable {
 
         ////////// this method needs to be called before the show method
         setProjectLocation(fxmlLoader);
+        setProjectTitle(fxmlLoader);
         ///////////
 
         stage.show();
+    }
+
+    private void setProjectTitle(FXMLLoader fxmlLoader) {
+        //Get access to the next screen controller and set the project location attribute of it
+        String projectTitle = projectTitleTextField.getText();
+        System.out.println(TAG+":"+projectTitle);
+
+        SimpleTemplateController controller = fxmlLoader.<SimpleTemplateController>getController();
+        controller.setProjectTitle(projectTitle);
+
     }
 
     @FXML
@@ -98,14 +112,14 @@ public class NewProjectSpecificationsController implements Initializable {
         //Show open file dialog
         File file = directoryChooser.showDialog(null);
         if(file!=null){
-            projectDirectoryTextField.setText(file.getAbsolutePath());
+            projectLocationTextField.setText(file.getAbsolutePath());
         }
 
     }
 
     private void setProjectLocation(FXMLLoader fxmlLoader) {
     //Get access to the next screen controller and set the project location attribute of it
-        String projectLocation = projectDirectoryTextField.getText();
+        String projectLocation = projectLocationTextField.getText();
         System.out.println(TAG+":"+projectLocation);
 
         SimpleTemplateController controller = fxmlLoader.<SimpleTemplateController>getController();

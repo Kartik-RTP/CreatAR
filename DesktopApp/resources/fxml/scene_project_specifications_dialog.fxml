@@ -19,7 +19,7 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="newProjectForm" layoutX="404.0" layoutY="44.0" prefHeight="41.0" prefWidth="257.0" />
+      <TextField fx:id="projectTitleTextField" layoutX="404.0" layoutY="44.0" prefHeight="41.0" prefWidth="257.0" />
       <Label layoutX="96.0" layoutY="211.0" prefHeight="27.0" prefWidth="125.0" text="Template" textFill="#339999">
          <padding>
             <Insets left="30.0" />
@@ -46,10 +46,10 @@
          </font></Button>
       <ComboBox fx:id="newProjectSelectTemplate" layoutX="404.0" layoutY="209.0" prefHeight="41.0" prefWidth="257.0" promptText="Select Template" />
       <ComboBox fx:id="newProjectSelectSdk" layoutX="404.0" layoutY="338.0" prefHeight="41.0" prefWidth="257.0" promptText="Select SDK" />
-      <Label layoutX="121.0" layoutY="130.0" text="Select Directory" />
+      <Label layoutX="121.0" layoutY="130.0" text="Select Project Location" />
       <HBox layoutX="404.0" layoutY="126.0" prefHeight="41.0" prefWidth="267.0">
          <children>
-            <TextField fx:id="projectDirectoryTextField" prefHeight="26.0" prefWidth="239.0" />
+            <TextField fx:id="projectLocationTextField" prefHeight="26.0" prefWidth="239.0" />
             <Button fx:id="browseDirectoryButton" mnemonicParsing="false" onAction="#browseDirectory" text="D" />
          </children>
       </HBox>

@@ -37,6 +37,7 @@ public class SimpleTemplateController  implements Initializable{
 
     private static final String TAG = SimpleTemplateController.class.getSimpleName();
     private  String mProjectLocation;
+    private String mProjectTitle;
     private  BasicMarker mCurrentActiveMarker;
     private  int mCurrentActiveMarkerIndex=0;
 
@@ -268,10 +269,27 @@ public class SimpleTemplateController  implements Initializable{
         app.show();
     }
 
+    /////////////////////////////////////////////////////////////////////////////////////////
+
+
     public void setProjectLocation(String mProjectLocation) {
         this.mProjectLocation = mProjectLocation;
         System.out.println(TAG+":"+mProjectLocation);
     }
+
+    public String getProjectTitle() {
+        return mProjectTitle;
+    }
+
+    public void setProjectTitle(String mProjectTitle) {
+        this.mProjectTitle = mProjectTitle;
+    }
+
+    public String getProjectLocation() {
+        return mProjectLocation;
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////////
 
     class XCell extends ListCell<String>{
 
