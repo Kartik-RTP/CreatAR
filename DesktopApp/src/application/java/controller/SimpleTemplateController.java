@@ -36,7 +36,7 @@ import java.util.ResourceBundle;
 public class SimpleTemplateController  implements Initializable{
 
     private static final String TAG = SimpleTemplateController.class.getSimpleName();
-    private  String mProjectLocation;
+    private  String mProjectDirectory;
     private String mProjectTitle;
     private  BasicMarker mCurrentActiveMarker;
     private  int mCurrentActiveMarkerIndex=0;
@@ -70,9 +70,20 @@ public class SimpleTemplateController  implements Initializable{
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        loadProject();
+
         //this method is called when all fx:id nodes are available ..
         //I am going to set up the list view at this point
         if(mListOfMarkers==null){mListOfMarkers=new ArrayList<BasicMarker>();}
+
+    }
+
+    private void loadProject() {
+
+
+        //Do all the preprocessing such as building xml files and creating directories
+        //TODO : finish this off
+
 
     }
 
@@ -272,21 +283,21 @@ public class SimpleTemplateController  implements Initializable{
     /////////////////////////////////////////////////////////////////////////////////////////
 
 
-    public void setProjectDirectory(String mProjectLocation) {
-        this.mProjectLocation = mProjectLocation;
-        System.out.println(TAG+":"+mProjectLocation);
+    public void setProjectDirectory(String projectDirectory) {
+        this.mProjectDirectory = projectDirectory;
+        System.out.println(TAG+":"+ projectDirectory);
     }
 
     public String getProjectTitle() {
         return mProjectTitle;
     }
 
-    public void setProjectTitle(String mProjectTitle) {
-        this.mProjectTitle = mProjectTitle;
+    public void setProjectTitle(String projectTitle) {
+        this.mProjectTitle = projectTitle;
     }
 
     public String getProjectLocation() {
-        return mProjectLocation;
+        return mProjectDirectory;
     }
 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -332,5 +343,6 @@ public class SimpleTemplateController  implements Initializable{
     }
 
     //commenting needs to be done properly and information about functions needs to be added
+
 
 }

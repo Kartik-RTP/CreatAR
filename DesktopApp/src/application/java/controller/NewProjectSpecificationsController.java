@@ -117,8 +117,8 @@ public class NewProjectSpecificationsController implements Initializable {
         //Show open file dialog
         File file = directoryChooser.showDialog(null);
         if(file!=null){
-            mProjectDirectory = projectDirectoryTextField.getText() + "/"
-                              + projectTitleTextField.getText().toLowerCase()+"/";
+            mProjectDirectory = projectDirectoryTextField.getText() + File.separator
+                              + projectTitleTextField.getText().toLowerCase();//+File.separator;
             projectDirectoryTextField.setText(mProjectDirectory);
         }
 
@@ -132,7 +132,6 @@ public class NewProjectSpecificationsController implements Initializable {
 
 
         System.out.println(TAG+":"+mProjectDirectory);
-
         SimpleTemplateController controller = fxmlLoader.<SimpleTemplateController>getController();
         controller.setProjectDirectory(mProjectDirectory);
 
@@ -177,5 +176,6 @@ public class NewProjectSpecificationsController implements Initializable {
 
 
     }
+
 
 }
