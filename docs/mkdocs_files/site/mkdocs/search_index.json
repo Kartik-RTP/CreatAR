@@ -2,28 +2,23 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Welcome to MkDocs\n\n\nCOMING UP SOON ---------------------   STAY TUNED\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
+            "text": "Introduction\n\n\nCreatAR is a platform to create Augmented Reality applications in a hassle free way and without even having the knowledge to actually code the application . It enables a person to create an Augmented Reality application such that they can provide the end users personalised experience for anything they wish to create the application for.\nFor eg. A museum owner can create an application to enhance the information provided with artifacts present in the museum. Similarly a zoo owner can create the application to mention facts about the fauna in the zoo.\n\n\nStakeHolders\n\n\nThere are 3 stakeholders involved in the project :-\nCreatAR ---------- Application Creator ---------- End-Users\n- CreatAR - the main platform and its development team is itself a stakeholder as without it , further applications cannot be generated.\n- Application creator - the person or organisation that wants to utilize the platform in order to create the application for its end-users.\n- End-Users - The people who download the application created by the app creator , using the CreatAR , and use it to get enhanced entertainment or knowledge about the various things that the creator wants to showcase.\n\n\nRemaining documentation will be up soon!!!!!.", 
             "title": "Welcome to the world of CreatAR"
         }, 
         {
-            "location": "/#welcome-to-mkdocs", 
+            "location": "/#introduction", 
+            "text": "CreatAR is a platform to create Augmented Reality applications in a hassle free way and without even having the knowledge to actually code the application . It enables a person to create an Augmented Reality application such that they can provide the end users personalised experience for anything they wish to create the application for.\nFor eg. A museum owner can create an application to enhance the information provided with artifacts present in the museum. Similarly a zoo owner can create the application to mention facts about the fauna in the zoo.", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#stakeholders", 
+            "text": "There are 3 stakeholders involved in the project :-\nCreatAR ---------- Application Creator ---------- End-Users\n- CreatAR - the main platform and its development team is itself a stakeholder as without it , further applications cannot be generated.\n- Application creator - the person or organisation that wants to utilize the platform in order to create the application for its end-users.\n- End-Users - The people who download the application created by the app creator , using the CreatAR , and use it to get enhanced entertainment or knowledge about the various things that the creator wants to showcase.", 
+            "title": "StakeHolders"
+        }, 
+        {
+            "location": "/#remaining-documentation-will-be-up-soon", 
             "text": "", 
-            "title": "Welcome to MkDocs"
-        }, 
-        {
-            "location": "/#coming-up-soon-stay-tuned", 
-            "text": "For full documentation visit  mkdocs.org .", 
-            "title": "COMING UP SOON ---------------------   STAY TUNED"
-        }, 
-        {
-            "location": "/#commands", 
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.", 
-            "title": "Commands"
-        }, 
-        {
-            "location": "/#project-layout", 
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
-            "title": "Project layout"
+            "title": "Remaining documentation will be up soon!!!!!."
         }
     ]
 }

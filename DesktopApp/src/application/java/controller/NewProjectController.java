@@ -20,6 +20,7 @@ import javafx.scene.control.Button;
 
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 
@@ -30,6 +31,9 @@ import javafx.stage.Stage;
 
 
 public class NewProjectController implements Initializable {
+
+    private static final String TAG = NewProjectController.class.getSimpleName();
+
 
     @FXML
     private Label label;
@@ -47,6 +51,9 @@ public class NewProjectController implements Initializable {
     @FXML
     private ComboBox newProjectSelectSdk;
 
+    @FXML
+    private TextField projectDirectoryTextField ;
+
 
 
 
@@ -56,20 +63,38 @@ public class NewProjectController implements Initializable {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/scene_main.fxml"));
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/css/FirstScreen.css").toExternalForm());
-        Stage app = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        app.setScene(scene);
-        app.show();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     // What happens when you click on Next button
     @FXML
     private void newProjectNext(ActionEvent event) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/simple_template_project_create.fxml"));
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/simple_template_project_create.fxml"));
+        Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/css/create.css").toExternalForm());
-        Stage app = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        app.setScene(scene);
-        app.show();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+
+        ////////// this method needs to be called before the show method
+        setProjectLocation(fxmlLoader);
+        ///////////
+
+        stage.show();
+    }
+
+    private void setProjectLocation(FXMLLoader fxmlLoader) {
+    //Get access to the next screen controller and set the project location attribute of it
+        String projectLocation = projectDirectoryTextField.getText();
+        System.out.println(TAG+":"+projectLocation);
+
+        SimpleTemplateController controller = fxmlLoader.<SimpleTemplateController>getController();
+        controller.setProjectLocation(projectLocation);
+
+
     }
 
     // This is the combo box item list for the Select Template box
@@ -99,6 +124,7 @@ public class NewProjectController implements Initializable {
         // TODO
         newProjectSelectTemplate.setItems(selectTemplateOptions);
         newProjectSelectSdk.setItems(selectSdkOptions);
+
 
     }
 

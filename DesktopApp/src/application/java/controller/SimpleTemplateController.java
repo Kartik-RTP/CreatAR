@@ -35,6 +35,8 @@ import java.util.ResourceBundle;
  */
 public class SimpleTemplateController  implements Initializable{
 
+    private static final String TAG = SimpleTemplateController.class.getSimpleName();
+    private  String mProjectLocation;
     private  BasicMarker mCurrentActiveMarker;
     private  int mCurrentActiveMarkerIndex=0;
 
@@ -70,7 +72,7 @@ public class SimpleTemplateController  implements Initializable{
         //this method is called when all fx:id nodes are available ..
         //I am going to set up the list view at this point
         if(mListOfMarkers==null){mListOfMarkers=new ArrayList<BasicMarker>();}
-
+        
     }
 
 
@@ -264,6 +266,11 @@ public class SimpleTemplateController  implements Initializable{
         Stage app = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app.setScene(scene);
         app.show();
+    }
+
+    public void setProjectLocation(String mProjectLocation) {
+        this.mProjectLocation = mProjectLocation;
+        System.out.println(TAG+":"+mProjectLocation);
     }
 
     class XCell extends ListCell<String>{

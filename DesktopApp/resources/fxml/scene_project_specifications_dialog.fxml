@@ -8,9 +8,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="NewProjectID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controller.NewProjectController">
+<Pane fx:id="NewProjectID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controller.NewProjectController">
    <children>
-      <Label layoutX="96.0" layoutY="91.0" prefHeight="41.0" prefWidth="155.0" text="Project Title" textFill="#339999">
+      <Label layoutX="96.0" layoutY="45.0" prefHeight="41.0" prefWidth="155.0" text="Project Title" textFill="#339999">
          <padding>
             <Insets left="30.0" />
          </padding>
@@ -18,7 +18,7 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <TextField fx:id="newProjectForm" layoutX="404.0" layoutY="91.0" prefHeight="41.0" prefWidth="257.0" />
+      <TextField fx:id="newProjectForm" layoutX="404.0" layoutY="44.0" prefHeight="41.0" prefWidth="257.0" />
       <Label layoutX="96.0" layoutY="211.0" prefHeight="27.0" prefWidth="125.0" text="Template" textFill="#339999">
          <padding>
             <Insets left="30.0" />
@@ -45,5 +45,7 @@
          </font></Button>
       <ComboBox fx:id="newProjectSelectTemplate" layoutX="404.0" layoutY="209.0" prefHeight="41.0" prefWidth="257.0" promptText="Select Template" />
       <ComboBox fx:id="newProjectSelectSdk" layoutX="404.0" layoutY="338.0" prefHeight="41.0" prefWidth="257.0" promptText="Select SDK" />
+      <Label layoutX="121.0" layoutY="130.0" text="Select Directory" />
+      <TextField fx:id="projectDirectoryTextField" layoutX="447.0" layoutY="117.0" />
    </children>
 </Pane>
