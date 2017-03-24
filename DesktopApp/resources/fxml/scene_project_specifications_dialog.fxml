@@ -49,7 +49,7 @@
       <Label layoutX="121.0" layoutY="130.0" text="Select Project Location" />
       <HBox layoutX="404.0" layoutY="126.0" prefHeight="41.0" prefWidth="267.0">
          <children>
-            <TextField fx:id="projectLocationTextField" prefHeight="26.0" prefWidth="239.0" />
+            <TextField fx:id="projectDirectoryTextField" prefHeight="26.0" prefWidth="239.0" />
             <Button fx:id="browseDirectoryButton" mnemonicParsing="false" onAction="#browseDirectory" text="D" />
          </children>
       </HBox>

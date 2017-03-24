@@ -272,7 +272,7 @@ public class SimpleTemplateController  implements Initializable{
     /////////////////////////////////////////////////////////////////////////////////////////
 
 
-    public void setProjectLocation(String mProjectLocation) {
+    public void setProjectDirectory(String mProjectLocation) {
         this.mProjectLocation = mProjectLocation;
         System.out.println(TAG+":"+mProjectLocation);
     }

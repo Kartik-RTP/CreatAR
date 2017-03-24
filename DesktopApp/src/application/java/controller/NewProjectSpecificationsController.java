@@ -1,6 +1,8 @@
 
 package application.java.controller;
 
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -36,13 +38,13 @@ import javafx.stage.Stage;
 public class NewProjectSpecificationsController implements Initializable {
 
     private static final String TAG = NewProjectSpecificationsController.class.getSimpleName();
-
+    private String mProjectDirectory;
 
     @FXML
     private Label label;
 
     @FXML
-    private Button newProjectBack;
+                                                                                                                                                                                                                                                                                                                private Button newProjectBack;
 
     @FXML
     private Button newProjectNext;
@@ -58,9 +60,12 @@ public class NewProjectSpecificationsController implements Initializable {
     private ComboBox newProjectSelectSdk;
 
     @FXML
-    private TextField projectLocationTextField;
+    private TextField projectDirectoryTextField;
 
     @FXML Button browseDirectoryButton;
+
+
+
 
 
 
@@ -87,7 +92,7 @@ public class NewProjectSpecificationsController implements Initializable {
         stage.setScene(scene);
 
         ////////// this method needs to be called before the show method
-        setProjectLocation(fxmlLoader);
+        setProjectDirectory(fxmlLoader);
         setProjectTitle(fxmlLoader);
         ///////////
 
@@ -112,18 +117,24 @@ public class NewProjectSpecificationsController implements Initializable {
         //Show open file dialog
         File file = directoryChooser.showDialog(null);
         if(file!=null){
-            projectLocationTextField.setText(file.getAbsolutePath());
+            mProjectDirectory = projectDirectoryTextField.getText() + "/"
+                              + projectTitleTextField.getText().toLowerCase()+"/";
+            projectDirectoryTextField.setText(mProjectDirectory);
         }
 
     }
 
-    private void setProjectLocation(FXMLLoader fxmlLoader) {
+
+
+
+    private void setProjectDirectory(FXMLLoader fxmlLoader) {
     //Get access to the next screen controller and set the project location attribute of it
-        String projectLocation = projectLocationTextField.getText();
-        System.out.println(TAG+":"+projectLocation);
+
+
+        System.out.println(TAG+":"+mProjectDirectory);
 
         SimpleTemplateController controller = fxmlLoader.<SimpleTemplateController>getController();
-        controller.setProjectLocation(projectLocation);
+        controller.setProjectDirectory(mProjectDirectory);
 
 
     }
@@ -135,6 +146,7 @@ public class NewProjectSpecificationsController implements Initializable {
     );
 
     ObservableList<String> selectSdkOptions = FXCollections.observableArrayList(
+
             "Vuforia"
     );
 
@@ -155,6 +167,13 @@ public class NewProjectSpecificationsController implements Initializable {
         // TODO
         newProjectSelectTemplate.setItems(selectTemplateOptions);
         newProjectSelectSdk.setItems(selectSdkOptions);
+
+        projectDirectoryTextField.textProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                mProjectDirectory=newValue;
+            }
+        });
 
 
     }
