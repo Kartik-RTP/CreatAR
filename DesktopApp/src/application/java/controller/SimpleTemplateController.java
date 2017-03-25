@@ -66,11 +66,11 @@ public class SimpleTemplateController  implements Initializable{
 
 
     private List<BasicMarker> mListOfMarkers;
+    private File mProjectDirectoryFile; //used for accessing project directory
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        loadProject();
 
         //this method is called when all fx:id nodes are available ..
         //I am going to set up the list view at this point
@@ -78,13 +78,27 @@ public class SimpleTemplateController  implements Initializable{
 
     }
 
-    private void loadProject() {
-
+    public void loadProject() {
+        accessProjectDirectory();
 
         //Do all the preprocessing such as building xml files and creating directories
         //TODO : finish this off
 
 
+    }
+
+    private void accessProjectDirectory() {
+
+        mProjectDirectoryFile = new File(mProjectDirectory);
+        if (mProjectDirectoryFile.mkdirs()) {
+            System.out.format("\n"+TAG+":"+"Directory %s has been created.", mProjectDirectoryFile.getAbsolutePath());
+
+        } else if (mProjectDirectoryFile.isDirectory()) {
+            System.out.format("\n"+TAG+":"+"Directory %s has already been created.", mProjectDirectoryFile.getAbsolutePath());
+
+        } else {
+            System.out.format("\n"+TAG+":"+"Directory %s could not be created.", mProjectDirectoryFile.getAbsolutePath());
+        }
     }
 
 

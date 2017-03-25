@@ -38,7 +38,8 @@ import javafx.stage.Stage;
 public class NewProjectSpecificationsController implements Initializable {
 
     private static final String TAG = NewProjectSpecificationsController.class.getSimpleName();
-    private String mProjectDirectory;
+    private String mProjectDirectory; // = mProjectLocation + projectFolder
+    private String mProjectLocation ; // = workspace
 
     @FXML
     private Label label;
@@ -94,9 +95,16 @@ public class NewProjectSpecificationsController implements Initializable {
         ////////// this method needs to be called before the show method
         setProjectDirectory(fxmlLoader);
         setProjectTitle(fxmlLoader);
+        loadProject(fxmlLoader);
         ///////////
 
         stage.show();
+    }
+
+    private void loadProject(FXMLLoader fxmlLoader) {
+        SimpleTemplateController controller = fxmlLoader.<SimpleTemplateController>getController();
+        controller.loadProject();
+
     }
 
     private void setProjectTitle(FXMLLoader fxmlLoader) {
@@ -117,7 +125,8 @@ public class NewProjectSpecificationsController implements Initializable {
         //Show open file dialog
         File file = directoryChooser.showDialog(null);
         if(file!=null){
-            mProjectDirectory = projectDirectoryTextField.getText() + File.separator
+            mProjectLocation = file.getAbsolutePath();
+            mProjectDirectory = mProjectLocation + File.separator
                               + projectTitleTextField.getText().toLowerCase();//+File.separator;
             projectDirectoryTextField.setText(mProjectDirectory);
         }
@@ -171,6 +180,15 @@ public class NewProjectSpecificationsController implements Initializable {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 mProjectDirectory=newValue;
+                //TODO : update the mProjectLocation also here --see how to do it
+            }
+        });
+
+        projectTitleTextField.textProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                mProjectDirectory = mProjectLocation+File.separator+newValue;
+                projectDirectoryTextField.setText(mProjectDirectory);
             }
         });
 
