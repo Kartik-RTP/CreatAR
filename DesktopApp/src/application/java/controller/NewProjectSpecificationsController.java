@@ -93,12 +93,16 @@ public class NewProjectSpecificationsController implements Initializable {
         stage.setScene(scene);
 
         ////////// this method needs to be called before the show method
-        setProjectDirectory(fxmlLoader);
-        setProjectTitle(fxmlLoader);
+        setUpProject(fxmlLoader);
         loadProject(fxmlLoader);
         ///////////
 
         stage.show();
+    }
+
+    private void setUpProject(FXMLLoader fxmlLoader) {
+        setProjectDirectory(fxmlLoader);
+        setProjectTitle(fxmlLoader);
     }
 
     private void loadProject(FXMLLoader fxmlLoader) {
@@ -187,6 +191,7 @@ public class NewProjectSpecificationsController implements Initializable {
         projectTitleTextField.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+
                 mProjectDirectory = mProjectLocation+File.separator+newValue;
                 projectDirectoryTextField.setText(mProjectDirectory);
             }
