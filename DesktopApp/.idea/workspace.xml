@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java" afterPath="$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/application/java/model/MagicManifest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController$1.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController$2.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$1.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell$1.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/Marker.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/Marker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" afterPath="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,27 +76,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SimpleTemplateController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SimpleTemplateController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+            <state relative-caret-position="3420">
+              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#addMarker#0;class#SimpleTemplateController#0" expanded="false" />
-                <element signature="method#updateCurrentActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
-                <element signature="method#updateMarkerPane#0;class#SimpleTemplateController#0" expanded="false" />
-                <element signature="method#gotoPreviousMarker#0;class#SimpleTemplateController#0" expanded="false" />
-                <element signature="method#gotoNextMarker#0;class#SimpleTemplateController#0" expanded="false" />
-                <element signature="method#editInformation#0;class#SimpleTemplateController#0" expanded="false" />
-                <element signature="method#addInformation#0;class#SimpleTemplateController#0" expanded="false" />
-                <element signature="method#addInfomationToInformationListOfActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
                 <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
                 <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
                 <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
                 <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
+                <element signature="e#13207#13208#0" expanded="true" />
+                <element signature="e#13267#13268#0" expanded="true" />
                 <element signature="class#XCell#0;class#SimpleTemplateController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MagicManifest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/model/MagicManifest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1218#1219#0" expanded="true" />
+                <element signature="e#1754#1755#0" expanded="true" />
+                <element signature="e#1794#1795#0" expanded="true" />
+                <element signature="e#1859#1860#0" expanded="true" />
+                <element signature="e#1917#1918#0" expanded="true" />
+                <element signature="e#1956#1957#0" expanded="true" />
+                <element signature="e#1992#1993#0" expanded="true" />
+                <element signature="e#2049#2050#0" expanded="true" />
+                <element signature="e#2099#2100#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Marker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/model/Marker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-806">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicMarker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicMarker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,11 +171,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewProjectSpecificationsController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewProjectSpecificationsController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="113" column="8" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
+            <state relative-caret-position="484">
+              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding>
                 <element signature="method#newProjectBack#0;class#NewProjectSpecificationsController#0" expanded="false" />
                 <element signature="method#setProjectTitle#0;class#NewProjectSpecificationsController#0" expanded="false" />
@@ -135,7 +189,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="720">
               <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,49 +209,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicInformation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicInformation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourthScreen.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/fxml/FourthScreen.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FourthScreenController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/java/controller/FourthScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="900">
               <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple_template_project_create.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
           </provider>
         </entry>
       </file>
@@ -206,8 +228,8 @@
       <list>
         <option value="Interface" />
         <option value="JavaFXApplication" />
-        <option value="Class" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -227,8 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/FirstScreen.css" />
-        <option value="$PROJECT_DIR$/src/sample/FirstScreen.java" />
         <option value="$PROJECT_DIR$/src/sample/FirstScreen.css" />
         <option value="$PROJECT_DIR$/src/sample/NewProject.fxml" />
         <option value="$PROJECT_DIR$/src/sample/NewProject.java" />
@@ -257,7 +277,6 @@
         <option value="$PROJECT_DIR$/resources/fxml/simple_template_project_create" />
         <option value="$PROJECT_DIR$/src/application/java/Main.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/BasicMarker.java" />
-        <option value="$PROJECT_DIR$/src/application/java/model/Marker.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/tobechanged/NewProjectController.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/Information.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/BasicInformation.java" />
@@ -276,8 +295,11 @@
         <option value="$PROJECT_DIR$/src/application/java/controller/FourthScreenController.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/NewProjectController.java" />
         <option value="$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml" />
-        <option value="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java" />
+        <option value="$PROJECT_DIR$/src/application/java/model/Marker.java" />
+        <option value="$PROJECT_DIR$/src/application/java/model/MagicBox.java" />
+        <option value="$PROJECT_DIR$/src/application/java/model/MagicManifest.java" />
+        <option value="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
       </list>
     </option>
   </component>
@@ -346,8 +368,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -403,12 +423,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -915,13 +959,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29215896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29215896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -939,6 +983,7 @@
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -999,13 +1044,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/FourthScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/fxml/FourthScreen.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1066,18 +1104,12 @@
           <caret line="203" column="5" selection-start-line="203" selection-start-column="5" selection-end-line="203" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#updateCurrentActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#updateMarkerPane#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#gotoPreviousMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#gotoNextMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#editInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#addInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#addInfomationToInformationListOfActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
+            <element signature="e#13207#13208#0" expanded="true" />
+            <element signature="e#13267#13268#0" expanded="true" />
             <element signature="class#XCell#0;class#SimpleTemplateController#0" expanded="false" />
           </folding>
         </state>
@@ -1150,18 +1182,12 @@
           <caret line="203" column="5" selection-start-line="203" selection-start-column="5" selection-end-line="203" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#updateCurrentActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#updateMarkerPane#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#gotoPreviousMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#gotoNextMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#editInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#addInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#addInfomationToInformationListOfActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
+            <element signature="e#13207#13208#0" expanded="true" />
+            <element signature="e#13267#13268#0" expanded="true" />
             <element signature="class#XCell#0;class#SimpleTemplateController#0" expanded="false" />
           </folding>
         </state>
@@ -1223,18 +1249,12 @@
           <caret line="165" column="47" selection-start-line="165" selection-start-column="47" selection-end-line="165" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#updateCurrentActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#updateMarkerPane#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#gotoPreviousMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#gotoNextMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#editInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#addInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#addInfomationToInformationListOfActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
+            <element signature="e#13207#13208#0" expanded="true" />
+            <element signature="e#13267#13268#0" expanded="true" />
             <element signature="class#XCell#0;class#SimpleTemplateController#0" expanded="false" />
           </folding>
         </state>
@@ -1333,40 +1353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicMarker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/Marker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
-            <element signature="e#314#315#0" expanded="false" />
-            <element signature="e#354#355#0" expanded="false" />
-            <element signature="e#382#383#0" expanded="false" />
-            <element signature="e#416#417#0" expanded="false" />
-            <element signature="e#447#448#0" expanded="false" />
-            <element signature="e#493#494#0" expanded="false" />
-            <element signature="e#527#528#0" expanded="false" />
-            <element signature="e#580#581#0" expanded="false" />
-            <element signature="e#619#620#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#742#743#0" expanded="false" />
-            <element signature="e#1102#1103#0" expanded="false" />
-            <element signature="e#1151#1152#0" expanded="false" />
-            <element signature="e#1199#1200#0" expanded="false" />
-            <element signature="e#1245#1246#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/model/Information.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1392,7 +1378,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#174#175#0" expanded="false" />
+            <element signature="e#204#205#0" expanded="false" />
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1422,7 +1413,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1452,7 +1445,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1467,36 +1462,74 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+        <state relative-caret-position="484">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#updateCurrentActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#updateMarkerPane#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#gotoPreviousMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#gotoNextMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#editInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#addInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#addInfomationToInformationListOfActiveMarker#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="class#XCell#0;class#SimpleTemplateController#0" expanded="false" />
+            <element signature="method#newProjectBack#0;class#NewProjectSpecificationsController#0" expanded="false" />
+            <element signature="method#setProjectTitle#0;class#NewProjectSpecificationsController#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/MagicManifest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="113" column="8" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
+        <state relative-caret-position="30">
+          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
           <folding>
-            <element signature="method#newProjectBack#0;class#NewProjectSpecificationsController#0" expanded="false" />
-            <element signature="method#setProjectTitle#0;class#NewProjectSpecificationsController#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1859#1860#0" expanded="true" />
+            <element signature="e#1917#1918#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#1992#1993#0" expanded="true" />
+            <element signature="e#2049#2050#0" expanded="true" />
+            <element signature="e#2099#2100#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/Marker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-806">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicMarker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3420">
+          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
+            <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
+            <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
+            <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
+            <element signature="e#13207#13208#0" expanded="true" />
+            <element signature="e#13267#13268#0" expanded="true" />
+            <element signature="class#XCell#0;class#SimpleTemplateController#0" expanded="false" />
           </folding>
         </state>
       </provider>

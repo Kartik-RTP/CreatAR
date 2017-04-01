@@ -3,6 +3,7 @@ package application.java.controller;
 import application.java.model.BasicInformation;
 import application.java.model.BasicMarker;
 import application.java.model.Information;
+import application.java.model.MagicManifest;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -36,11 +37,13 @@ import java.util.ResourceBundle;
 public class SimpleTemplateController  implements Initializable{
 
     private static final String TAG = SimpleTemplateController.class.getSimpleName();
-    private  String mProjectDirectory;
-    private String mProjectTitle;
+    ///////////////////////////////////////////////////////////////////////////////
+    //TODO: check if following 2 fields can be put into MagicManifest object itself
+    //TODO: or does it even make sense?
     private  BasicMarker mCurrentActiveMarker;
     private  int mCurrentActiveMarkerIndex=0;
-
+    ///////////////////////////////////////////////////////////////////////////////
+    private MagicManifest mMagicManifest;//its the project manifest object
     @FXML
     ImageView markerImageView;
     @FXML
@@ -65,21 +68,19 @@ public class SimpleTemplateController  implements Initializable{
     Button simpleProjectBuildButton;
 
 
-    private List<BasicMarker> mListOfMarkers;
-    private File mProjectDirectoryFile; //used for accessing project directory
-
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         //this method is called when all fx:id nodes are available ..
         //I am going to set up the list view at this point
-        if(mListOfMarkers==null){mListOfMarkers=new ArrayList<BasicMarker>();}
+        if(mMagicManifest==null){mMagicManifest=new MagicManifest();}
 
     }
 
     public void loadProject() {
+        //TODO: may need to intialize MagicManifest
         accessProjectDirectory();
+        loadMagicFile();
 
         //Do all the preprocessing such as building xml files and creating directories
         //TODO : finish this off
@@ -87,24 +88,60 @@ public class SimpleTemplateController  implements Initializable{
 
     }
 
+    private void loadMagicFile() {
+        //TODO: this needs to be implemented from scratch
+        File magicFile = new File(mMagicManifest.getProjectDirectory()
+                                    +  File.separator+"magic.xml");
+        try {
+            magicFile.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        if(magicFile.getAbsoluteFile().exists()){
+            System.out.println(TAG+":"+"magic.xml already exists");
+        }
+        else{
+            //need to use DOM classes and parsers for this
+            System.out.println(TAG+":"+"magic.xml has been created");
+        }
+        //this will create the magic.xml ,if doesn't exist already and then return its handle
+
+        //Probably need to create a anew object for this
+
+        //TODO : incorporate mMagicManifest here
+
+
+    }
+
     private void accessProjectDirectory() {
 
-        mProjectDirectoryFile = new File(mProjectDirectory);
-        if (mProjectDirectoryFile.mkdirs()) {
-            System.out.format("\n"+TAG+":"+"Directory %s has been created.", mProjectDirectoryFile.getAbsolutePath());
+        File projectDirectoryFile = new File(mMagicManifest.getProjectDirectory());
+        if (projectDirectoryFile.mkdirs()) {
+            System.out.format("\n"+TAG+":"+"Directory %s has been created.", mMagicManifest.
+                                                                             getProjectDirectoryFile().
+                                                                             getAbsolutePath()
+                                                                                                 );
 
-        } else if (mProjectDirectoryFile.isDirectory()) {
-            System.out.format("\n"+TAG+":"+"Directory %s has already been created.", mProjectDirectoryFile.getAbsolutePath());
+        } else if (projectDirectoryFile.isDirectory()) {
+            System.out.format("\n"+TAG+":"+"Directory %s has already been created.",  mMagicManifest.
+                                                                                        getProjectDirectoryFile().
+                                                                                        getAbsolutePath()
+                                                                                                         );
 
         } else {
-            System.out.format("\n"+TAG+":"+"Directory %s could not be created.", mProjectDirectoryFile.getAbsolutePath());
+            System.out.format("\n"+TAG+":"+"Directory %s could not be created.",  mMagicManifest
+                                                                                .getProjectDirectoryFile()
+                                                                                .getAbsolutePath()
+                                                                                                );
+
         }
+        mMagicManifest.setProjectDirectoryFile(projectDirectoryFile);
     }
 
 
     public void addMarker(ActionEvent actionEvent) {
 
-        if(mListOfMarkers==null){mListOfMarkers=new ArrayList<BasicMarker>();System.out.println("got called here");}//for first call
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Select Marker Images");
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
@@ -113,10 +150,10 @@ public class SimpleTemplateController  implements Initializable{
         List<File> selectedFiles= fileChooser.showOpenMultipleDialog( new Popup());//instead of new stage or popup , I need to give it primary stage
         //otherwise the control on previous windows is not locked
         if(selectedFiles!=null){
-            for(File file : selectedFiles){mListOfMarkers.add(new BasicMarker(file.toURI().toString()
+            for(File file : selectedFiles){mMagicManifest.addMarker(new BasicMarker(file.toURI().toString()
                                                                  ,file.getName()));}
         }
-        if(mListOfMarkers!=null && mListOfMarkers.size()>0){
+        if(mMagicManifest.getListOfMarkers()!=null && mMagicManifest.noOfMarkers()>0){
 
             updateCurrentActiveMarker(mCurrentActiveMarkerIndex);
 
@@ -125,7 +162,7 @@ public class SimpleTemplateController  implements Initializable{
     }
 
     private void updateCurrentActiveMarker(int index) {
-            mCurrentActiveMarker = mListOfMarkers.get(index);
+            mCurrentActiveMarker = (BasicMarker) mMagicManifest.getMarker(index);
             mCurrentActiveMarkerIndex = index;
             updateMarkerPane();
 
@@ -135,7 +172,7 @@ public class SimpleTemplateController  implements Initializable{
        on screen in the #put_id_here pane
     */
     private void updateMarkerPane() {
-        if(mListOfMarkers.size()>0){
+        if(mMagicManifest.noOfMarkers()>0){
             markerBorderPane.setVisible(true); //try to change this
                                                // , calling this function too many times
 
@@ -181,7 +218,7 @@ public class SimpleTemplateController  implements Initializable{
 
     public void gotoNextMarker(ActionEvent actionEvent) {
 
-       if(mCurrentActiveMarkerIndex<mListOfMarkers.size()-1){
+       if(mCurrentActiveMarkerIndex<mMagicManifest.noOfMarkers()-1){
            updateCurrentActiveMarker(mCurrentActiveMarkerIndex+1);
        }
     }
@@ -232,7 +269,7 @@ public class SimpleTemplateController  implements Initializable{
 */
 
 
-        if(mListOfMarkers!=null && mListOfMarkers.size()>0){
+        if(mMagicManifest.getListOfMarkers()!=null && mMagicManifest.noOfMarkers()>0){
             updateCurrentActiveMarker(mCurrentActiveMarkerIndex);
         }
     }
@@ -296,22 +333,16 @@ public class SimpleTemplateController  implements Initializable{
 
     /////////////////////////////////////////////////////////////////////////////////////////
 
+    // Following methods will be called by previous controller before moving to this controller
 
     public void setProjectDirectory(String projectDirectory) {
-        this.mProjectDirectory = projectDirectory;
+        mMagicManifest.setProjectDirectory(projectDirectory);
         System.out.println(TAG+":"+ projectDirectory);
     }
 
-    public String getProjectTitle() {
-        return mProjectTitle;
-    }
 
     public void setProjectTitle(String projectTitle) {
-        this.mProjectTitle = projectTitle;
-    }
-
-    public String getProjectLocation() {
-        return mProjectDirectory;
+        mMagicManifest.setProjectTitle(projectTitle);
     }
 
     ///////////////////////////////////////////////////////////////////////////////////////
