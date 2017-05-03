@@ -81,7 +81,7 @@
                                     <Insets />
                                  </HBox.margin>
                               </Button>
-                              <Button fx:id="removeMarkerButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="110.0" text="Remove" translateX="260.0">
+                              <Button fx:id="removeMarkerButton" mnemonicParsing="false" onAction="#removeMarker" prefHeight="31.0" prefWidth="110.0" text="Remove" translateX="260.0">
                                  <HBox.margin>
                                     <Insets />
                                  </HBox.margin>

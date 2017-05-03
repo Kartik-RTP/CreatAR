@@ -85,6 +85,11 @@ public class NewProjectSpecificationsController implements Initializable {
     @FXML
     private void newProjectNext(ActionEvent event) throws IOException{
 
+        // If the text field for project name is empty, next button will be disabled
+        if (mProjectDirectory.equals("")){
+            newProjectNext.setDisable(true);
+        }
+
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/simple_template_project_create.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);

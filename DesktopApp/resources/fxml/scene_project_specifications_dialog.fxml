@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="NewProjectID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controller.NewProjectSpecificationsController">
+<Pane fx:id="NewProjectID" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.java.controller.NewProjectSpecificationsController">
    <children>
       <Label layoutX="96.0" layoutY="45.0" prefHeight="41.0" prefWidth="155.0" text="Project Title" textFill="#339999">
          <padding>
@@ -46,11 +46,14 @@
          </font></Button>
       <ComboBox fx:id="newProjectSelectTemplate" layoutX="404.0" layoutY="209.0" prefHeight="41.0" prefWidth="257.0" promptText="Select Template" />
       <ComboBox fx:id="newProjectSelectSdk" layoutX="404.0" layoutY="338.0" prefHeight="41.0" prefWidth="257.0" promptText="Select SDK" />
-      <Label layoutX="121.0" layoutY="130.0" text="Select Project Location" />
-      <HBox layoutX="404.0" layoutY="126.0" prefHeight="41.0" prefWidth="267.0">
+      <Label layoutX="121.0" layoutY="130.0" text="Select Project Location" textFill="#339999">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <HBox layoutX="404.0" layoutY="126.0" prefHeight="41.0" prefWidth="282.0">
          <children>
-            <TextField fx:id="projectDirectoryTextField" prefHeight="26.0" prefWidth="239.0" />
-            <Button fx:id="browseDirectoryButton" mnemonicParsing="false" onAction="#browseDirectory" text="D" />
+            <TextField fx:id="projectDirectoryTextField" prefHeight="41.0" prefWidth="239.0" />
+            <Button fx:id="browseDirectoryButton" mnemonicParsing="false" onAction="#browseDirectory" prefHeight="41.0" prefWidth="46.0" text="..." />
          </children>
       </HBox>
    </children>

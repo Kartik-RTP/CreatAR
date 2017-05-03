@@ -1,5 +1,6 @@
 package application.java.controller;
 
+import application.java.helper.Logger;
 import application.java.model.BasicInformation;
 import application.java.model.BasicMarker;
 import application.java.model.Information;
@@ -23,6 +24,7 @@ import javafx.scene.text.Text;
 import javafx.stage.*;
 import javafx.util.Callback;
 import javafx.scene.control.Button;
+import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,6 +44,8 @@ public class SimpleTemplateController  implements Initializable{
     //TODO: or does it even make sense?
     private  BasicMarker mCurrentActiveMarker;
     private  int mCurrentActiveMarkerIndex=0;
+    private String markerInfoDir;
+    private String markerDirectory;
     ///////////////////////////////////////////////////////////////////////////////
     private MagicManifest mMagicManifest;//its the project manifest object
     @FXML
@@ -140,18 +144,39 @@ public class SimpleTemplateController  implements Initializable{
     }
 
 
-    public void addMarker(ActionEvent actionEvent) {
+    public void addMarker(ActionEvent actionEvent) throws IOException {
 
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Select Marker Images");
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
         System.out.print("Got a hit");
-        //TODO:change the actual paramter passed as the primaryStage
+        //TODO:change the actual parameter passed as the primaryStage
         List<File> selectedFiles= fileChooser.showOpenMultipleDialog( new Popup());//instead of new stage or popup , I need to give it primary stage
         //otherwise the control on previous windows is not locked
         if(selectedFiles!=null){
-            for(File file : selectedFiles){mMagicManifest.addMarker(new BasicMarker(file.toURI().toString()
-                                                                 ,file.getName()));}
+            for(File file : selectedFiles){
+                mMagicManifest.addMarker(new BasicMarker(file.toURI().toString()
+                                                                 ,file.getName()));
+                int index = file.getName().indexOf(".");
+                String markerDirectoryName = file.getName().substring(0,index);
+
+
+                markerDirectory = mMagicManifest.getProjectDirectory()+ "\\" +markerDirectoryName;
+
+                // Make marker name directory
+                makeDirectory(mMagicManifest.getProjectDirectory()+ "\\" +markerDirectoryName);
+
+                // Copy images from src to marker name directory
+                copyFiles(file.getAbsolutePath(), markerDirectory);
+
+                //Make marker NFT directory
+                makeDirectory(markerDirectory + "\\" +"markerNFT");
+
+                // Make marker Info directory
+                makeDirectory(markerDirectory + "\\" + "markerInformation");
+                markerInfoDir = makeDirectory(markerDirectory + "\\" + "markerInformation");
+
+            }
         }
         if(mMagicManifest.getListOfMarkers()!=null && mMagicManifest.noOfMarkers()>0){
 
@@ -159,6 +184,33 @@ public class SimpleTemplateController  implements Initializable{
 
         }
 
+    }
+    public void removeMarker(ActionEvent actionEvent) throws IOException{
+        int index = mCurrentActiveMarker.getName().indexOf(".");
+        String removedDir = mMagicManifest.getProjectDirectory() + "\\" + mCurrentActiveMarker.getName().substring(0,index);
+
+        FileUtils.deleteDirectory(new File(removedDir));
+
+        if(mMagicManifest.getListOfMarkers()!=null && mMagicManifest.noOfMarkers()>0){
+
+            updateCurrentActiveMarker(mCurrentActiveMarkerIndex);
+
+        }
+
+    }
+
+    private String makeDirectory(String directoryName){
+        File dir = new File(directoryName);
+        dir.mkdir();
+
+        return directoryName;
+
+    }
+
+    private void copyFiles(String fileSrc, String destination) throws IOException {
+        File markerImageSource = new File(fileSrc);
+        File markerImageDest = new File(destination);
+        FileUtils.copyFileToDirectory(markerImageSource,markerImageDest);
     }
 
     private void updateCurrentActiveMarker(int index) {
@@ -231,7 +283,7 @@ public class SimpleTemplateController  implements Initializable{
 
 
     // This is the method which is called when we press the "Add Button" next to "Edit Button"
-    public void addInformation(ActionEvent actionEvent) {
+    public void addInformation(ActionEvent actionEvent) throws IOException {
            //TODO: to be filled
 
         FileChooser fileChooser = new FileChooser();
@@ -240,7 +292,7 @@ public class SimpleTemplateController  implements Initializable{
 
         //TODO: decide on the filters
         fileChooser.getExtensionFilters().addAll(
-            new FileChooser.ExtensionFilter("Text Files","*.txt"),
+            //new FileChooser.ExtensionFilter("Text Files","*.txt"),
             new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif")
         );
 
@@ -249,6 +301,14 @@ public class SimpleTemplateController  implements Initializable{
         if(selectedFiles != null){
             //Add the informations to information list of current active marker
             addInfomationToInformationListOfActiveMarker(selectedFiles);
+
+            String markerInfoImages = makeDirectory(mCurrentActiveMarker + "\\" + "Images");
+            makeDirectory(markerInfoImages);
+
+
+            for(Information f: mCurrentActiveMarker.getInformationList()){
+                //copyFiles(f.getAddress(),markerInfoImages);
+            }
             //Update the list view
             updateInformationListView(mCurrentActiveMarker.getInformationList());
         }
@@ -365,6 +425,7 @@ public class SimpleTemplateController  implements Initializable{
                 public void handle(ActionEvent event) {
                     System.out.println(lastItem + " : " + event);
                     informationListView.getItems().remove(lastItem);  //This line is to remove a row on button click!
+
                     //TODO : deleteInformation(); So create this function and
                     //TODO : basically , we need to remove the above rows data as well
 
