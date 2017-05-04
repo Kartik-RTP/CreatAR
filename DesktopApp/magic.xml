@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectManifest>
+    <mProjectTitle>ads</mProjectTitle>
+    <mProjectDirectory>C:\Users\Rajat\Desktop\ads</mProjectDirectory>
+    <mListOfMarkers>
+        <address>file:/C:/Users/Rajat/Desktop/Images/Wallpaper%201080p%20(26).jpg</address>
+        <informationList>
+            <address>C:\Users\Rajat\Desktop\Info\first.txt</address>
+            <name>first.txt</name>
+        </informationList>
+        <name>Wallpaper 1080p (26).jpg</name>
+    </mListOfMarkers>
+</ProjectManifest>

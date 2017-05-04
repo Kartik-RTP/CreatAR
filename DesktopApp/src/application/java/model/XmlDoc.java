@@ -15,7 +15,7 @@ public class XmlDoc {
         marshallerObj.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
         MagicManifest m = new MagicManifest();
-        m.addMarker(new BasicMarker("hello","world"));
+        m.addMarker(new Marker("hello","world"));
 
         marshallerObj.marshal(m, new FileOutputStream("magic.xml"));
     }

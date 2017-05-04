@@ -1,11 +1,14 @@
 package application.java.model;
 
+import javax.xml.bind.annotation.XmlElement;
 import java.lang.String;
 
 /**
  * Created by Rajat on 10/21/2016.
  */
-public abstract class Information  {
+
+
+public  class Information  {
 
     private  String mName;
     private  String mAddress;

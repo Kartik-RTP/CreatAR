@@ -1,10 +1,7 @@
 package application.java.controller;
 
 import application.java.helper.Logger;
-import application.java.model.BasicInformation;
-import application.java.model.BasicMarker;
-import application.java.model.Information;
-import application.java.model.MagicManifest;
+import application.java.model.*;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -52,7 +49,7 @@ public class SimpleTemplateController  implements Initializable{
     ///////////////////////////////////////////////////////////////////////////////
     //TODO: check if following 2 fields can be put into MagicManifest object itself
     //TODO: or does it even make sense?
-    private  BasicMarker mCurrentActiveMarker;
+    private Marker mCurrentActiveMarker;
     private  int mCurrentActiveMarkerIndex=0;
     private String markerInfoDir;
     private String markerDirectory;
@@ -104,9 +101,10 @@ public class SimpleTemplateController  implements Initializable{
             contextObj = JAXBContext.newInstance(MagicManifest.class);
             mMarshallerObj = contextObj.createMarshaller();
             mMarshallerObj.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+            System.out.println("Marshall is "+ mMarshallerObj.toString());
 
         } catch (JAXBException e) {
-
+            Logger.log(TAG,"not setting JAXB",3);
             e.printStackTrace();
         }
 
@@ -188,7 +186,7 @@ public class SimpleTemplateController  implements Initializable{
         //otherwise the control on previous windows is not locked
         if(selectedFiles!=null){
             for(File file : selectedFiles){
-                mMagicManifest.addMarker(new BasicMarker(file.toURI().toString()
+                mMagicManifest.addMarker(new Marker(file.toURI().toString()
                                                                  ,file.getName()));
                 int index = file.getName().indexOf(".");
                 String markerDirectoryName = file.getName().substring(0,index);
@@ -265,7 +263,7 @@ public class SimpleTemplateController  implements Initializable{
 
 
     private void updateCurrentActiveMarker(int index) {
-            mCurrentActiveMarker = (BasicMarker) mMagicManifest.getMarker(index);
+            mCurrentActiveMarker = (Marker) mMagicManifest.getMarker(index);
             mCurrentActiveMarkerIndex = index;
             updateMarkerPane();
 
@@ -386,7 +384,7 @@ public class SimpleTemplateController  implements Initializable{
         List<File> selectedFiles= fileChooser.showOpenMultipleDialog( new Popup());//instead of new stage or popup , I need to give it primary stage
         //otherwise the control on previous windows is not locked
         if(selectedFiles!=null){
-            for(File file : selectedFiles){mCurrentActiveMarker.addInformation(new BasicInformation(file.toURI().toString()
+            for(File file : selectedFiles){mCurrentActiveMarker.addInformation(new Information(file.toURI().toString()
                     ,file.getName()));}
         }
 */
@@ -400,7 +398,7 @@ public class SimpleTemplateController  implements Initializable{
     private void addInfomationToInformationListOfActiveMarker(List<File> selectedFiles) {
         for (int i=0;i<selectedFiles.size();i++){
             mCurrentActiveMarker.getInformationList().add(
-                                                new BasicInformation(
+                                                new Information(
                                                         selectedFiles.get(i).getAbsolutePath(),
                                                         selectedFiles.get(i).getName()
                                                                      )
@@ -458,13 +456,13 @@ public class SimpleTemplateController  implements Initializable{
     }
 
     private void saveProject() {
+
         try {
             mMarshallerObj.marshal(mMagicManifest, new FileOutputStream("magic.xml"));
         } catch (JAXBException e) {
             Logger.log(TAG,"unable to save project",3);
             e.printStackTrace();
         } catch (FileNotFoundException e) {
-            Logger.log(TAG,"unable to save project",3);
             e.printStackTrace();
         }
 

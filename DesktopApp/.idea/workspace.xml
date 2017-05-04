@@ -2,18 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/magic.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/BasicMarker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/java/model/BasicInformation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/application/java/model/BasicMarker.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$1.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell$1.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/BasicMarker.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/BasicMarker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/Information.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/Information.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/MagicManifest.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/MagicManifest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/Marker.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/Marker.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" afterPath="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/model/BasicMarker.java" afterPath="$PROJECT_DIR$/src/application/java/model/BasicMarker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/helper/informationListCell.java" afterPath="$PROJECT_DIR$/src/application/java/helper/informationListCell.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/model/Information.java" afterPath="$PROJECT_DIR$/src/application/java/model/Information.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/model/MagicManifest.java" afterPath="$PROJECT_DIR$/src/application/java/model/MagicManifest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/model/Marker.java" afterPath="$PROJECT_DIR$/src/application/java/model/Marker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/model/XmlDoc.java" afterPath="$PROJECT_DIR$/src/application/java/model/XmlDoc.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,6 +31,11 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/DesktopApp$FirstScreen.coverage" NAME="FirstScreen Coverage Results" MODIFIED="1493922382999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>application.java.useless_tobedeleted.*</FILTER>
+    </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -77,11 +88,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SimpleTemplateController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimpleTemplateController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="377" column="13" selection-start-line="377" selection-start-column="13" selection-end-line="377" selection-end-column="13" />
+            <state relative-caret-position="2465">
+              <caret line="181" column="36" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
               <folding>
                 <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
                 <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
@@ -94,10 +105,23 @@
       <file leaf-file-name="XmlDoc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/java/model/XmlDoc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="19" column="68" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="68" />
+            <state relative-caret-position="289">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewProjectSpecificationsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding>
+                <element signature="method#newProjectBack#0;class#NewProjectSpecificationsController#0" expanded="false" />
+                <element signature="method#setProjectTitle#0;class#NewProjectSpecificationsController#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -106,11 +130,33 @@
       <file leaf-file-name="MagicManifest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/java/model/MagicManifest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            <state relative-caret-position="249">
+              <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="informationListCell.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/helper/informationListCell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="magic.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/magic.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,23 +164,10 @@
       <file leaf-file-name="Marker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/java/model/Marker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="595">
+              <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicInformation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicInformation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-              <folding>
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,19 +176,11 @@
       <file leaf-file-name="Information.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/application/java/model/Information.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicMarker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicMarker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,7 +190,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="e#152#153#0" expanded="false" />
+                <element signature="e#206#207#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -224,9 +252,7 @@
         <option value="$PROJECT_DIR$/resources/fxml/simple_template_project_create" />
         <option value="$PROJECT_DIR$/src/application/java/Main.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/tobechanged/NewProjectController.java" />
-        <option value="$PROJECT_DIR$/src/application/java/model/Information.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/BasicInformation.java" />
-        <option value="$PROJECT_DIR$/src/application/java/helper/informationListCell.java" />
         <option value="$PROJECT_DIR$/src/application/java/Home.java" />
         <option value="$PROJECT_DIR$/src/application/java/useless_tobedeleted/FirstScreen.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/AddMarkerController.java" />
@@ -244,11 +270,13 @@
         <option value="$PROJECT_DIR$/src/application/java/model/MagicBox.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/BasicMarker.java" />
+        <option value="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
+        <option value="$PROJECT_DIR$/src/application/java/model/Marker.java" />
+        <option value="$PROJECT_DIR$/src/application/java/model/Information.java" />
+        <option value="$PROJECT_DIR$/src/application/java/helper/informationListCell.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/XmlDoc.java" />
         <option value="$PROJECT_DIR$/magic.xml" />
-        <option value="$PROJECT_DIR$/src/application/java/model/Marker.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/MagicManifest.java" />
-        <option value="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
       </list>
     </option>
   </component>
@@ -319,6 +347,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -395,6 +425,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -433,8 +485,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,7 +501,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Libraries/commons-io-2.5.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -1018,15 +1068,16 @@
       <workItem from="1493796292050" duration="2277000" />
       <workItem from="1493824792819" duration="9040000" />
       <workItem from="1493836547590" duration="2630000" />
+      <workItem from="1493919406591" duration="5343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115998000" />
+    <option name="totallyTimeSpent" value="121341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1036,7 +1087,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41324922" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46845427" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1046,8 +1098,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1300,13 +1352,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/helper/informationListCell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/images/Open-icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1390,17 +1435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding>
-            <element signature="method#newProjectBack#0;class#NewProjectSpecificationsController#0" expanded="false" />
-            <element signature="method#setProjectTitle#0;class#NewProjectSpecificationsController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1432,72 +1466,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicMarker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/Marker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#152#153#0" expanded="false" />
+            <element signature="e#206#207#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/Information.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/MagicManifest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#263#264#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/XmlDoc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="68" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/magic.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1512,15 +1484,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="117" column="0" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <element signature="method#newProjectBack#0;class#NewProjectSpecificationsController#0" expanded="false" />
+            <element signature="method#setProjectTitle#0;class#NewProjectSpecificationsController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicMarker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/Marker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="47" column="11" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/Information.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/helper/informationListCell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/XmlDoc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="377" column="13" selection-start-line="377" selection-start-column="13" selection-end-line="377" selection-end-column="13" />
+        <state relative-caret-position="2465">
+          <caret line="181" column="36" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="36" />
           <folding>
             <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/MagicManifest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magic.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
