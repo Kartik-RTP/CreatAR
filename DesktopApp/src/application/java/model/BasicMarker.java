@@ -7,6 +7,7 @@ public class BasicMarker extends Marker {
 
 
     BasicMarker(String address) {
+
         super(address);
     }
 

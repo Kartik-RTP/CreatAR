@@ -1,17 +1,24 @@
 package application.java.model;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by canopy on 23-10-2016.
  */
+
+@XmlRootElement
 abstract class Marker {
 
     private String mName;
     private String mAddress;
+
     private List<Information> mInformationList;
 
+    @XmlAttribute
     public String getName() {
         return mName;
     }
@@ -28,6 +35,7 @@ abstract class Marker {
         mAddress = address;
     }
 
+    @XmlElement
     public List<Information> getInformationList() {
         return mInformationList;
     }
@@ -36,10 +44,15 @@ abstract class Marker {
         mInformationList = informationList;
     }
 
+
     Marker(String address){
         //TODO:initalize name
         mAddress = address;
         mInformationList = new ArrayList<Information>();
+    }
+
+    Marker(){
+
     }
 
     Marker(String address,String name){

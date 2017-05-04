@@ -2,6 +2,10 @@ package application.java.model;
 
 import sun.misc.InvalidJarIndexException;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlList;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,12 +16,13 @@ import java.util.List;
  * is an object version of magic.xml
  **/
 
-
+@XmlRootElement
 public class MagicManifest {
 
 
     private File mProjectDirectoryFile; //used for accessing project directory
     private List<Marker> mListOfMarkers;
+    private List<Information> mListOfInformation;
     private  String mProjectDirectory;
     private String mProjectTitle;
 
@@ -36,10 +41,14 @@ public class MagicManifest {
         this.mProjectDirectoryFile = mProjectDirectoryFile;
     }
 
-
+    @XmlList
     public List<Marker> getListOfMarkers() {
         return mListOfMarkers;
     }
+
+    @XmlElement
+    public List<Information> getListOfInformation(){return  mListOfInformation;}
+
 
     public void addMarker(Marker marker){
         if (mListOfMarkers==null){
@@ -48,9 +57,19 @@ public class MagicManifest {
         mListOfMarkers.add(marker);
     }
 
+
+    public void addInformation(Information information){
+        if(mListOfInformation == null){
+            mListOfInformation = new ArrayList<Information>();
+        }
+        mListOfInformation.add(information);
+    }
+
     public void setListOfMarkers(List<Marker> mListOfMarkers) {
         this.mListOfMarkers = mListOfMarkers;
     }
+
+    public void setListOfInformation (List<Information> mListOfInformation ) {this.mListOfInformation = mListOfInformation;}
 
     public int noOfMarkers(){
         if (mListOfMarkers==null){return  0;}

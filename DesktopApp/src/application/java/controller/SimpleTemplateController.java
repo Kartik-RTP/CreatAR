@@ -25,8 +25,16 @@ import javafx.stage.*;
 import javafx.util.Callback;
 import javafx.scene.control.Button;
 import org.apache.commons.io.FileUtils;
+import sun.rmi.runtime.Log;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.soap.Name;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -36,6 +44,8 @@ import java.util.ResourceBundle;
 /**
  * Created by kartik on 24-10-2016.
  */
+
+
 public class SimpleTemplateController  implements Initializable{
 
     private static final String TAG = SimpleTemplateController.class.getSimpleName();
@@ -71,15 +81,38 @@ public class SimpleTemplateController  implements Initializable{
     @FXML
     Button simpleProjectBuildButton;
 
+    Marshaller mMarshallerObj;
+
+
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
         //this method is called when all fx:id nodes are available ..
         //I am going to set up the list view at this point
-        if(mMagicManifest==null){mMagicManifest=new MagicManifest();}
+        if(mMagicManifest==null){mMagicManifest=new MagicManifest();
+        }
+        setupJAXB();
 
     }
+
+    private void setupJAXB() {
+        JAXBContext contextObj = null;
+        try {
+
+            contextObj = JAXBContext.newInstance(MagicManifest.class);
+            mMarshallerObj = contextObj.createMarshaller();
+            mMarshallerObj.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+        } catch (JAXBException e) {
+
+            e.printStackTrace();
+        }
+
+
+    }
+
 
     public void loadProject() {
         //TODO: may need to intialize MagicManifest
@@ -213,6 +246,24 @@ public class SimpleTemplateController  implements Initializable{
         FileUtils.copyFileToDirectory(markerImageSource,markerImageDest);
     }
 
+    private void copyFiles(List<File> files) throws IOException {
+        for(File file:files){
+            copyFiles(
+                    file.getAbsolutePath(),
+                    markerDirectory+File.separator+"markerInformation"+File.separator+"Images"
+                    );
+        }
+
+    }
+
+    private String getNameOfImage(String fileName){
+        int index = fileName.indexOf(".");
+        String NameOfImage = fileName.substring(0,index);
+
+        return NameOfImage;
+    }
+
+
     private void updateCurrentActiveMarker(int index) {
             mCurrentActiveMarker = (BasicMarker) mMagicManifest.getMarker(index);
             mCurrentActiveMarkerIndex = index;
@@ -283,7 +334,7 @@ public class SimpleTemplateController  implements Initializable{
 
 
     // This is the method which is called when we press the "Add Button" next to "Edit Button"
-    public void addInformation(ActionEvent actionEvent) throws IOException {
+    public void addInformation(ActionEvent actionEvent) throws IOException, JAXBException {
            //TODO: to be filled
 
         FileChooser fileChooser = new FileChooser();
@@ -292,25 +343,37 @@ public class SimpleTemplateController  implements Initializable{
 
         //TODO: decide on the filters
         fileChooser.getExtensionFilters().addAll(
-            //new FileChooser.ExtensionFilter("Text Files","*.txt"),
-            new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif")
+            new FileChooser.ExtensionFilter("Text Files","*.txt")
+            //new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif")
+
         );
 
         List<File> selectedFiles = fileChooser.showOpenMultipleDialog(null);
 
         if(selectedFiles != null){
+            copyFiles(selectedFiles); //TODO : add trycatch to this statement with proper logging
             //Add the informations to information list of current active marker
             addInfomationToInformationListOfActiveMarker(selectedFiles);
+            String NameofImage = getNameOfImage(mCurrentActiveMarker.getName());
 
-            String markerInfoImages = makeDirectory(mCurrentActiveMarker + "\\" + "Images");
+            String markerInfoImages = makeDirectory(
+                    mMagicManifest.getProjectDirectory() + "\\" + NameofImage + "\\" + "markerInformation" + "\\" + "Images");
+
             makeDirectory(markerInfoImages);
 
 
-            for(Information f: mCurrentActiveMarker.getInformationList()){
-                //copyFiles(f.getAddress(),markerInfoImages);
-            }
+            //  JAXB Object to XML starts here
+
+
+
+
+
+            // JAXB Object to XML ends here
+
+
             //Update the list view
             updateInformationListView(mCurrentActiveMarker.getInformationList());
+            Logger.log(TAG, "Directories Created",2);
         }
         else{
             System.out.println("Files not chosen");
@@ -383,12 +446,29 @@ public class SimpleTemplateController  implements Initializable{
     // What happens when you click on Build button
     @FXML
     private void simpleProjectBuildButton(ActionEvent event) throws IOException {
+        saveProject();
+
+
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/FourthScreen.fxml"));
         Scene scene = new Scene(root);
         scene.getStylesheets().add(getClass().getResource("/css/FourthScreen.css").toExternalForm());
         Stage app = (Stage) ((Node) event.getSource()).getScene().getWindow();
         app.setScene(scene);
         app.show();
+    }
+
+    private void saveProject() {
+        try {
+            mMarshallerObj.marshal(mMagicManifest, new FileOutputStream("magic.xml"));
+        } catch (JAXBException e) {
+            Logger.log(TAG,"unable to save project",3);
+            e.printStackTrace();
+        } catch (FileNotFoundException e) {
+            Logger.log(TAG,"unable to save project",3);
+            e.printStackTrace();
+        }
+
+
     }
 
     /////////////////////////////////////////////////////////////////////////////////////////

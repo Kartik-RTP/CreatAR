@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController$1.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController$2.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/NewProjectSpecificationsController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$1.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell$1.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController$XCell.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/controller/SimpleTemplateController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/BasicMarker.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/BasicMarker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/MagicManifest.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/MagicManifest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/Marker.class" afterPath="$PROJECT_DIR$/out/production/CreatAr/application/java/model/Marker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CreatAr.iml" afterPath="$PROJECT_DIR$/CreatAr.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CreatAr/fxml/scene_project_specifications_dialog.fxml" afterPath="$PROJECT_DIR$/out/production/CreatAr/fxml/scene_project_specifications_dialog.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml" afterPath="$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml" afterPath="$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java" afterPath="$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" afterPath="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/model/BasicMarker.java" afterPath="$PROJECT_DIR$/src/application/java/model/BasicMarker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/model/MagicManifest.java" afterPath="$PROJECT_DIR$/src/application/java/model/MagicManifest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/application/java/model/Marker.java" afterPath="$PROJECT_DIR$/src/application/java/model/Marker.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,14 +80,82 @@
       <file leaf-file-name="SimpleTemplateController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="427" column="0" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="377" column="13" selection-start-line="377" selection-start-column="13" selection-end-line="377" selection-end-column="13" />
               <folding>
                 <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
                 <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
                 <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
-                <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlDoc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/model/XmlDoc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="19" column="68" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="68" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MagicManifest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/model/MagicManifest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Marker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/model/Marker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="89">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicInformation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicInformation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Information.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/model/Information.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicMarker.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicMarker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,8 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sample/FirstScreen.css" />
-        <option value="$PROJECT_DIR$/src/sample/NewProject.fxml" />
         <option value="$PROJECT_DIR$/src/sample/NewProject.java" />
         <option value="$PROJECT_DIR$/src/sample/NewProject.css" />
         <option value="$PROJECT_DIR$/src/sample/NewProjectController.java" />
@@ -161,7 +223,6 @@
         <option value="$PROJECT_DIR$/resources/fxml/simple_template.fxml" />
         <option value="$PROJECT_DIR$/resources/fxml/simple_template_project_create" />
         <option value="$PROJECT_DIR$/src/application/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/application/java/model/BasicMarker.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/tobechanged/NewProjectController.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/Information.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/BasicInformation.java" />
@@ -180,10 +241,13 @@
         <option value="$PROJECT_DIR$/src/application/java/controller/FourthScreenController.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/NewProjectController.java" />
         <option value="$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml" />
-        <option value="$PROJECT_DIR$/src/application/java/model/Marker.java" />
         <option value="$PROJECT_DIR$/src/application/java/model/MagicBox.java" />
-        <option value="$PROJECT_DIR$/src/application/java/model/MagicManifest.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java" />
+        <option value="$PROJECT_DIR$/src/application/java/model/BasicMarker.java" />
+        <option value="$PROJECT_DIR$/src/application/java/model/XmlDoc.java" />
+        <option value="$PROJECT_DIR$/magic.xml" />
+        <option value="$PROJECT_DIR$/src/application/java/model/Marker.java" />
+        <option value="$PROJECT_DIR$/src/application/java/model/MagicManifest.java" />
         <option value="$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java" />
       </list>
     </option>
@@ -255,8 +319,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,6 +352,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesktopApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -349,6 +433,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,7 +460,6 @@
     <property name="options.lastSelected" value="preferences.JavaFX" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
     <property name="SearchEverywhereHistoryKey" value="updatePa&#9;PSI&#9;JAVA://application.java.controller.SimpleTemplateController#updateMarkerPane" />
     <property name="extract.method.default.visibility" value="private" />
@@ -395,26 +480,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.FirstScreen">
-    <configuration default="false" name="NewProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="application.java.useless_tobedeleted.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="application.java.useless_tobedeleted.NewProject" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CreatAr" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="FirstScreen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -435,26 +500,6 @@
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="application.java.useless_tobedeleted.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="sample.sample" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CreatAr" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -897,9 +942,9 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Third" type="Application" factoryName="Application">
+    <configuration default="false" name="XmlDoc" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="application.java.useless_tobedeleted.Third" />
+      <option name="MAIN_CLASS_NAME" value="application.java.model.XmlDoc" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -912,57 +957,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="AddMarker" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="application.java.useless_tobedeleted.AddMarker" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CreatAr" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="application.java.useless_tobedeleted.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="application.java.Home" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="CreatAr" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <list size="7">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Applet.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Third" />
-      <item index="2" class="java.lang.String" itemvalue="Application.AddMarker" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="4" class="java.lang.String" itemvalue="Application.NewProject" />
-      <item index="5" class="java.lang.String" itemvalue="Application.FirstScreen" />
-      <item index="6" class="java.lang.String" itemvalue="Application.sample" />
+      <item index="1" class="java.lang.String" itemvalue="Application.XmlDoc" />
+      <item index="2" class="java.lang.String" itemvalue="Application.FirstScreen" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.FirstScreen" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NewProject" />
-        <item index="2" class="java.lang.String" itemvalue="Application.sample" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1014,11 +1016,13 @@
       <workItem from="1486488287780" duration="4351000" />
       <workItem from="1493789617262" duration="3357000" />
       <workItem from="1493796292050" duration="2277000" />
+      <workItem from="1493824792819" duration="9040000" />
+      <workItem from="1493836547590" duration="2630000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104328000" />
+    <option name="totallyTimeSpent" value="115998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1031,13 +1035,14 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2917981" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41324922" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20863836" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32649842" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1054,7 +1059,6 @@
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32760474" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1079,24 +1083,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/controller/FirstScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/FirstScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1105,14 +1091,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/fxml/scene_main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="10" column="248" selection-start-line="10" selection-start-column="220" selection-end-line="10" selection-end-column="248" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
@@ -1130,7 +1116,6 @@
             <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1143,25 +1128,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/fxml/FourthScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/controller/FirstScreenController.java">
@@ -1179,14 +1164,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/fxml/scene_main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="10" column="248" selection-start-line="10" selection-start-column="220" selection-end-line="10" selection-end-column="248" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
@@ -1204,7 +1189,6 @@
             <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1217,25 +1201,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/fxml/FourthScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/controller/FirstScreenController.java">
@@ -1267,7 +1251,6 @@
             <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1288,14 +1271,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/AddMarker.css" />
     <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/controller/FirstScreenController.java">
@@ -1365,60 +1348,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/Information.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#738#739#0" expanded="false" />
-            <element signature="e#766#767#0" expanded="false" />
-            <element signature="e#806#807#0" expanded="false" />
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#899#900#0" expanded="false" />
-            <element signature="e#945#946#0" expanded="false" />
-            <element signature="e#979#980#0" expanded="false" />
-            <element signature="e#1010#1011#0" expanded="false" />
-            <element signature="e#1038#1039#0" expanded="false" />
-            <element signature="e#1078#1079#0" expanded="false" />
-            <element signature="e#1106#1107#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicInformation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding>
-            <element signature="e#174#175#0" expanded="false" />
-            <element signature="e#204#205#0" expanded="false" />
-            <element signature="e#263#264#0" expanded="false" />
-            <element signature="e#298#299#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/fxml/FourthScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template_project_create.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/controller/FirstScreenController.java">
@@ -1441,14 +1390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicMarker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/controller/NewProjectSpecificationsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
@@ -1461,6 +1402,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/fxml/scene_project_specifications_dialog.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
@@ -1472,49 +1416,15 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/scene_main.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/fxml/scene_main.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="248" selection-start-line="10" selection-start-column="220" selection-end-line="10" selection-end-column="248" />
           <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="32" column="96" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/Marker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/java/model/MagicManifest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1526,15 +1436,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicMarker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/Marker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/Information.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/MagicManifest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/BasicInformation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/java/model/XmlDoc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="68" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magic.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/fxml/simple_template.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="32" column="96" selection-start-line="32" selection-start-column="96" selection-end-line="32" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/application/java/controller/SimpleTemplateController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="427" column="0" selection-start-line="427" selection-start-column="0" selection-end-line="427" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="377" column="13" selection-start-line="377" selection-start-column="13" selection-end-line="377" selection-end-column="13" />
           <folding>
             <element signature="method#updateInformationListView#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#doneChangesToInformation#0;class#SimpleTemplateController#0" expanded="false" />
             <element signature="method#antiEditInformation#0;class#SimpleTemplateController#0" expanded="false" />
-            <element signature="method#simpleProjectBuildButton#0;class#SimpleTemplateController#0" expanded="false" />
           </folding>
         </state>
       </provider>
