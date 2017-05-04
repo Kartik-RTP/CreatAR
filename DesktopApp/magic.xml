@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ProjectManifest>
-    <mProjectTitle>ads</mProjectTitle>
-    <mProjectDirectory>C:\Users\Rajat\Desktop\ads</mProjectDirectory>
+    <mProjectTitle>hello</mProjectTitle>
+    <mProjectDirectory>C:\Users\Rajat\Desktop\hello</mProjectDirectory>
     <mListOfMarkers>
+        <name>Wallpaper 1080p (26).jpg</name>
         <address>file:/C:/Users/Rajat/Desktop/Images/Wallpaper%201080p%20(26).jpg</address>
-        <informationList>
+        <information>
+            <address>C:\Users\Rajat\Desktop\Info\fourth.txt</address>
+            <name>fourth.txt</name>
+        </information>
+        <information>
             <address>C:\Users\Rajat\Desktop\Info\first.txt</address>
             <name>first.txt</name>
-        </informationList>
-        <name>Wallpaper 1080p (26).jpg</name>
+        </information>
+    </mListOfMarkers>
+    <mListOfMarkers>
+        <name>Wallpaper 1080p (27).jpg</name>
+        <address>file:/C:/Users/Rajat/Desktop/Images/Wallpaper%201080p%20(27).jpg</address>
     </mListOfMarkers>
 </ProjectManifest>

@@ -395,7 +395,7 @@ public class SimpleTemplateController  implements Initializable{
         }
     }
 
-    private void addInfomationToInformationListOfActiveMarker(List<File> selectedFiles) {
+    private void addInfomationToInformationListOfActiveMarker(List<File> selectedFiles) throws IOException {
         for (int i=0;i<selectedFiles.size();i++){
             mCurrentActiveMarker.getInformationList().add(
                                                 new Information(

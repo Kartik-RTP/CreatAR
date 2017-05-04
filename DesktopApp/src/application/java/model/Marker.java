@@ -3,6 +3,7 @@ package application.java.model;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,15 +11,21 @@ import java.util.List;
  * Created by canopy on 23-10-2016.
  */
 
-
+@XmlRootElement
+@XmlType(propOrder = {"name","address","informationList"})
 public class Marker {
 
+
     private String mName;
+
+
+
     private String mAddress;
+
 
     private List<Information> mInformationList;
 
-
+    @XmlElement(name = "name")
     public String getName() {
         return mName;
     }
@@ -27,6 +34,7 @@ public class Marker {
         mName = name;
     }
 
+    @XmlElement(name = "address")
     public String getAddress() {
         return mAddress;
     }
@@ -35,7 +43,7 @@ public class Marker {
         mAddress = address;
     }
 
-
+    @XmlElement(name = "information")
     public List<Information> getInformationList() {
         return mInformationList;
     }
@@ -51,7 +59,7 @@ public class Marker {
         mInformationList = new ArrayList<Information>();
     }
 
-    Marker(){
+    public Marker(){
 
     }
 
@@ -73,5 +81,6 @@ public class Marker {
 
         return mInformationList.get(index);
     }
+
 
 }

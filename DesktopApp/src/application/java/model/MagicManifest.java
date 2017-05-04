@@ -22,7 +22,7 @@ public class MagicManifest {
     private File mProjectDirectoryFile; //used for accessing project directory
 
 
-    @XmlElement(name = "marker")
+
     private List<Marker> mListOfMarkers;
 
     private  String mProjectDirectory;
