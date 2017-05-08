@@ -18,10 +18,7 @@ public class Marker {
 
     private String mName;
 
-
-
     private String mAddress;
-
 
     private List<Information> mInformationList;
 

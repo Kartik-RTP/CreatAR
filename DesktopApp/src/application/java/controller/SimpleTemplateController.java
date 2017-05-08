@@ -53,6 +53,7 @@ public class SimpleTemplateController  implements Initializable{
     private  int mCurrentActiveMarkerIndex=0;
     private String markerInfoDir;
     private String markerDirectory;
+    private String markerFolder;
     ///////////////////////////////////////////////////////////////////////////////
     private MagicManifest mMagicManifest;//its the project manifest object
     @FXML
@@ -184,6 +185,10 @@ public class SimpleTemplateController  implements Initializable{
         //TODO:change the actual parameter passed as the primaryStage
         List<File> selectedFiles= fileChooser.showOpenMultipleDialog( new Popup());//instead of new stage or popup , I need to give it primary stage
         //otherwise the control on previous windows is not locked
+
+        markerFolder = mMagicManifest.getProjectDirectory() +  File.separator + "marker";
+        makeDirectory(markerFolder);
+
         if(selectedFiles!=null){
             for(File file : selectedFiles){
                 mMagicManifest.addMarker(new Marker(file.toURI().toString()
@@ -192,20 +197,21 @@ public class SimpleTemplateController  implements Initializable{
                 String markerDirectoryName = file.getName().substring(0,index);
 
 
-                markerDirectory = mMagicManifest.getProjectDirectory()+ "\\" +markerDirectoryName;
+                markerDirectory = markerFolder + File.separator + markerDirectoryName;
 
                 // Make marker name directory
-                makeDirectory(mMagicManifest.getProjectDirectory()+ "\\" +markerDirectoryName);
+                makeDirectory(markerFolder + File.separator +markerDirectoryName);
 
                 // Copy images from src to marker name directory
                 copyFiles(file.getAbsolutePath(), markerDirectory);
 
                 //Make marker NFT directory
-                makeDirectory(markerDirectory + "\\" +"markerNFT");
+                makeDirectory(markerDirectory + File.separator +"markerNFT");
+                copyFiles(file.getAbsolutePath(),markerDirectory + File.separator +"markerNFT");
 
                 // Make marker Info directory
-                makeDirectory(markerDirectory + "\\" + "markerInformation");
-                markerInfoDir = makeDirectory(markerDirectory + "\\" + "markerInformation");
+                makeDirectory(markerDirectory + File.separator + "markerInformation");
+                markerInfoDir = makeDirectory(markerDirectory + File.separator + "markerInformation");
 
             }
         }
@@ -218,7 +224,7 @@ public class SimpleTemplateController  implements Initializable{
     }
     public void removeMarker(ActionEvent actionEvent) throws IOException{
         int index = mCurrentActiveMarker.getName().indexOf(".");
-        String removedDir = mMagicManifest.getProjectDirectory() + "\\" + mCurrentActiveMarker.getName().substring(0,index);
+        String removedDir = mMagicManifest.getProjectDirectory() + File.separator + mCurrentActiveMarker.getName().substring(0,index);
 
         FileUtils.deleteDirectory(new File(removedDir));
 
@@ -244,11 +250,11 @@ public class SimpleTemplateController  implements Initializable{
         FileUtils.copyFileToDirectory(markerImageSource,markerImageDest);
     }
 
-    private void copyFiles(List<File> files) throws IOException {
+    private void copyFiles(List<File> files,String destination) throws IOException {
         for(File file:files){
             copyFiles(
                     file.getAbsolutePath(),
-                    markerDirectory+File.separator+"markerInformation"+File.separator+"Images"
+                    destination
                     );
         }
 
@@ -341,32 +347,30 @@ public class SimpleTemplateController  implements Initializable{
 
         //TODO: decide on the filters
         fileChooser.getExtensionFilters().addAll(
-            new FileChooser.ExtensionFilter("Text Files","*.txt")
-            //new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif")
+            //new FileChooser.ExtensionFilter("Text Files","*.txt")
+            new FileChooser.ExtensionFilter("Image Files", "*.jpg")
+
 
         );
 
+
         List<File> selectedFiles = fileChooser.showOpenMultipleDialog(null);
+        if(selectedFiles.size() > 6){
+            selectedFiles = selectedFiles.subList(0,6);
+        }
 
         if(selectedFiles != null){
-            copyFiles(selectedFiles); //TODO : add trycatch to this statement with proper logging
+
             //Add the informations to information list of current active marker
-            addInfomationToInformationListOfActiveMarker(selectedFiles);
             String NameofImage = getNameOfImage(mCurrentActiveMarker.getName());
 
             String markerInfoImages = makeDirectory(
-                    mMagicManifest.getProjectDirectory() + "\\" + NameofImage + "\\" + "markerInformation" + "\\" + "Images");
+                    markerFolder + File.separator + NameofImage + File.separator + "markerInformation" + File.separator + "Images");
 
             makeDirectory(markerInfoImages);
+            copyFiles(selectedFiles,markerInfoImages); //TODO : add trycatch to this statement with proper logging
 
-
-            //  JAXB Object to XML starts here
-
-
-
-
-
-            // JAXB Object to XML ends here
+            addInfomationToInformationListOfActiveMarker(selectedFiles);
 
 
             //Update the list view

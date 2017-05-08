@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ProjectManifest>
-    <mProjectTitle>hello</mProjectTitle>
+    <mProjectTitle>Hello</mProjectTitle>
     <mProjectDirectory>C:\Users\Rajat\Desktop\hello</mProjectDirectory>
     <mListOfMarkers>
-        <name>Wallpaper 1080p (26).jpg</name>
-        <address>file:/C:/Users/Rajat/Desktop/Images/Wallpaper%201080p%20(26).jpg</address>
+        <name>Wallpaper 1080p (24).jpg</name>
+        <address>file:/C:/Users/Rajat/Desktop/Images/Wallpaper%201080p%20(24).jpg</address>
         <information>
-            <address>C:\Users\Rajat\Desktop\Info\fourth.txt</address>
-            <name>fourth.txt</name>
+            <address>C:\Users\Rajat\Documents\ALL PICS\100 Best Nature Full HD Wallpapers [1920x1080p] (www.freewallpapers2.blogspot.com)\-52035_8100.jpg</address>
+            <name>-52035_8100.jpg</name>
         </information>
         <information>
-            <address>C:\Users\Rajat\Desktop\Info\first.txt</address>
-            <name>first.txt</name>
+            <address>C:\Users\Rajat\Documents\ALL PICS\100 Best Nature Full HD Wallpapers [1920x1080p] (www.freewallpapers2.blogspot.com)\20130817-DSC_2462_HDR-1.jpg</address>
+            <name>20130817-DSC_2462_HDR-1.jpg</name>
+        </information>
+        <information>
+            <address>C:\Users\Rajat\Documents\ALL PICS\100 Best Nature Full HD Wallpapers [1920x1080p] (www.freewallpapers2.blogspot.com)\mVcZwOP.jpg</address>
+            <name>mVcZwOP.jpg</name>
+        </information>
+        <information>
+            <address>C:\Users\Rajat\Documents\ALL PICS\100 Best Nature Full HD Wallpapers [1920x1080p] (www.freewallpapers2.blogspot.com)\Pangong_Tso_wide.jpg</address>
+            <name>Pangong_Tso_wide.jpg</name>
+        </information>
+        <information>
+            <address>C:\Users\Rajat\Documents\ALL PICS\100 Best Nature Full HD Wallpapers [1920x1080p] (www.freewallpapers2.blogspot.com)\Wallpaper 1080p (1).jpg</address>
+            <name>Wallpaper 1080p (1).jpg</name>
+        </information>
+        <information>
+            <address>C:\Users\Rajat\Documents\ALL PICS\100 Best Nature Full HD Wallpapers [1920x1080p] (www.freewallpapers2.blogspot.com)\Wallpaper 1080p (2).jpg</address>
+            <name>Wallpaper 1080p (2).jpg</name>
+        </information>
+        <information>
+            <address>C:\Users\Rajat\Documents\ALL PICS\100 Best Nature Full HD Wallpapers [1920x1080p] (www.freewallpapers2.blogspot.com)\Wallpaper 1080p (3).jpg</address>
+            <name>Wallpaper 1080p (3).jpg</name>
+        </information>
+        <information>
+            <address>C:\Users\Rajat\Documents\ALL PICS\100 Best Nature Full HD Wallpapers [1920x1080p] (www.freewallpapers2.blogspot.com)\Wallpaper 1080p (4).jpg</address>
+            <name>Wallpaper 1080p (4).jpg</name>
         </information>
     </mListOfMarkers>
     <mListOfMarkers>
-        <name>Wallpaper 1080p (27).jpg</name>
-        <address>file:/C:/Users/Rajat/Desktop/Images/Wallpaper%201080p%20(27).jpg</address>
+        <name>Wallpaper 1080p (26).jpg</name>
+        <address>file:/C:/Users/Rajat/Desktop/Images/Wallpaper%201080p%20(26).jpg</address>
     </mListOfMarkers>
 </ProjectManifest>
